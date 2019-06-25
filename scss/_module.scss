@@ -2,22 +2,15 @@
   @include align-center;
   background-color: hsla(0, 0%, 20%, 0.6);
   width: 60%;
-  padding-top:2%;
-  padding-bottom:2%;
+  padding: 2%;
 }
 
-// .banner-container {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   padding: 16px 30px;
-//   border-radius: 50px;
-//   border: none;
-//   cursor: pointer;
-// }
-//
-// .banner-container img {
-//   width: 100%;
-// }
+#datePicker1{
+  border-radius: 5px;
+  border-color: $blue;
+}
+
+#datePicker2{
+  border-radius: 5px;
+  border-color: $blue;
+}

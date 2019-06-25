@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/jquery-ui.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>Kiwi Getaway</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Kiwi Getaway</title>
+</head>
+<body>
 
-    <nav class="navbar navbar-dark bg-primary justify-content-center">
-        <span class="navbar-brand mb-0"><h1>Kiwi Getaway</h1></span>
-    </nav>
-    <div class="row">
-      <div class="col">
-        <div class="#">
-						  <img src="images/auckland.jpg" class="img-fluid" alt="Auckland">
-                <div class="banner-search-overlay">
-                    <button type="button" class="btn btn-primary">Search</button>
+  <nav class="navbar navbar-dark bg-primary justify-content-center">
+    <span class="navbar-brand mb-0"><h1>Kiwi Getaway</h1></span>
+  </nav>
+  <div class="row">
+    <div class="col">
+      <div class="#">
+        <img src="images/auckland.jpg" class="img-fluid" alt="Auckland">
+        <div class="banner-search-overlay">
+          <div class="row">
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Destination
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Auckland</a>
+                  <a class="dropdown-item" href="#">Wellington</a>
+                  <a class="dropdown-item" href="#">Queenstown</a>
                 </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  No. of travellers
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">1-2</a>
+                  <a class="dropdown-item" href="#">2-4</a>
+                  <a class="dropdown-item" href="#">1-4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Accommodation type
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Hotel</a>
+                  <a class="dropdown-item" href="#">Motel</a>
+                  <a class="dropdown-item" href="#">House</a>
+                  <a class="dropdown-item" href="#">Hostel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <input type="text" placeholder="Check in date" id="datePicker1">
+            </div>
+            <div class="col">
+              <input type="text" placeholder="Check out date"  id="datePicker2">
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary text-white ">Search</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-    </div>
-    <!-- <div id="close">
-         <i class="fas fa-times fa-2x"></i>
-    </div> -->
+  </div>
+  <!-- <div id="close">
+  <i class="fas fa-times fa-2x"></i>
+</div> -->
 
-    <nav class="navbar footer-colour-l justify-content-center">
-      <span class="navbar-brand mb-0"><p>Supported by Tourism New Zealand</p></span>
-    </nav>
-    <script src="js/jquery-3.4.1.min.js"> </script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"> </script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+<footer class="navbar footer-colour-l justify-content-center">
+  <span class="navbar-brand mb-0"><p>Supported by Tourism New Zealand</p></span>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"> </script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.js"> </script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
 </html>

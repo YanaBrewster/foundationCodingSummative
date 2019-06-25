@@ -1,4 +1,5 @@
 // console.log("hello");
+
 var hotel = [
   {
     name: "QT Hotel Wellington",
@@ -88,7 +89,7 @@ var hotel = [
     address: "27 Stanley Street, Queenstown",
     nearby: "Queenstown Mall <br> 4 min walk <br> Queenstown Beach <br> 5 min walk" + " <br> Skycity Queenstown Casino <br> 6 min walk" + " <br> Queenstown (ZQN-Queenstown Intl.) <br> 8 min drive",
     price: 157,
-    // thumbnail: "", 
+    // thumbnail: "",
     // photo: ""
   },
   {
@@ -478,3 +479,11 @@ var hostel = [
   }
 
 ]
+
+$( function() {
+  $( "#datePicker1" ).datepicker();
+} );
+
+$( function() {
+  $( "#datePicker2" ).datepicker();
+} );

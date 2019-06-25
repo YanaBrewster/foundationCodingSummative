@@ -7618,16 +7618,30 @@ p {
   margin: 0 auto;
   background-color: rgba(51, 51, 51, 0.6);
   width: 60%;
-  padding-top: 2%;
-  padding-bottom: 2%; }
+  padding: 2%; }
+
+#datePicker1 {
+  border-radius: 5px;
+  border-color: #33CCFF; }
+
+#datePicker2 {
+  border-radius: 5px;
+  border-color: #33CCFF; }
 
 .banner-search-overlay {
   text-align: center;
   margin: 0 auto;
   background-color: rgba(51, 51, 51, 0.6);
   width: 60%;
-  padding-top: 2%;
-  padding-bottom: 2%; }
+  padding: 2%; }
+
+#datePicker1 {
+  border-radius: 5px;
+  border-color: #33CCFF; }
+
+#datePicker2 {
+  border-radius: 5px;
+  border-color: #33CCFF; }
 
 #close {
   position: absolute;
