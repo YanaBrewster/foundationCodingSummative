@@ -19,8 +19,9 @@
       <div class="#">
         <img src="images/auckland.jpg" class="img-fluid" alt="Auckland">
         <div class="banner-search-overlay">
+
           <div class="row">
-            <div class="col">
+            <div class="col mb-2">
               <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Destination
@@ -32,7 +33,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mb-2">
               <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   No. of travellers
@@ -45,8 +46,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="dropdown">
+            <div class="col mb-2">
+              <div class="dropdown mb-4">
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Accommodation type
                 </button>
@@ -59,30 +60,60 @@
               </div>
             </div>
           </div>
-            <div class="col">
-              <input type="text" placeholder="Check in date" id="datePicker1">
+          <div class="row">
+            <div class="col mb-2">
+              <input type="text" placeholder=" Check in date" id="datePicker1">
             </div>
-            <div class="col">
-              <input type="text" placeholder="Check out date"  id="datePicker2">
+            <div class="col mb-2 ">
+              <input type="text" placeholder=" Check out date"  id="datePicker2">
             </div>
-            <div class="col">
-              <button type="button" class="btn btn-primary text-white ">Search</button>
+            <div class="col-12 col-lg mb-2">
+              <button type="button" class="btn btn-primary text-white mt-2 ">Search</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
   <div class="container-fluid">
+    <div id="hotels">
 
+    </div>
+    <h2 class=" justify-content-center">Search Results</h2>
   </div>
-  <!-- <div id="close">
-  <i class="fas fa-times fa-2x"></i>
-</div> -->
 
-<footer class="navbar footer-colour-l justify-content-center">
-  <span class="navbar-brand mb-0"><p>Supported by Tourism New Zealand</p></span>
+  <div id="accomPopUp" class="overlay">
+      <div class="overlayContent rounded pr-2">
+          <div class="row h-100">
+              <div class="col-12 h-100">
+                  <img id="photo" longdesc=""src="" class="h-100 img-fluid rounded-left" alt="">
+              </div>
+              <div class="col-12 col-lg-6">
+                  <h2 id="name" class="text-left mt-4"></h2>
+                  <img id="stars" longdesc=""src="" class="h-100 img-fluid" alt="">
+                  <p id="description"></p>
+                  <p id="sleeps"></p>
+                  <p id="amenities"></p>
+              </div>
+              <div class="col-12 col-lg-6">
+                  <p id="location"></p>
+                  <p id="address"></p>
+                  <p id="nearby"></p>
+                  <p id="price"></p>
+              </div>
+          </div>
+        <div id="close">
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+      </div>
+
+    </div>
+
+
+<footer class="navbar fixed-bottom footer-colour-l justify-content-center">
+  <span class="navbar-brand"><p>Supported by Tourism New Zealand</p></span>
 </footer>
 
 <script src="js/jquery-3.4.1.min.js"> </script>

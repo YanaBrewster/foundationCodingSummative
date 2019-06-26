@@ -2,6 +2,7 @@
 
 var hotel = [
   {
+    id: 1,
     name: "QT Hotel Wellington",
     stars: "4stars.png",
     description: "Opposite the Museum of New Zealand Te Papa Tongarewa," + " this quirky boutique hotel is 6.1 km from Wellington International Airport." + " This smoke-free hotel features a restaurant, an indoor pool, and 2 bars/lounges. WiFi in public areas is free. " + " Additionally, a fitness center,  a coffee shop/café, and a spa tub are onsite." + " All 65 rooms feature thoughtful touches like espresso makers and pillow menus," + " plus free WiFi and LCD TVs with cable channels." + " Other amenities available to guests include 24-hour room service, refrigerators, and minibars.",
@@ -15,6 +16,7 @@ var hotel = [
     photo: "QTRoom-Wellington.jpg"
   },
   {
+    id: 2,
     name: "Copthorne Hotel Wellington Oriental Bay",
     stars: "4stars.png",
     description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
@@ -28,6 +30,7 @@ var hotel = [
     photo: "corpthorneRoom-Wellington.jpg"
   },
   {
+    id: 3,
     name: "ibis Wellington",
     stars: "3stars.png",
     description: "This contemporary hotel is a 7-minute walk from the Wellington City Libraries, " + "8 minutes on foot from City Gallery Wellington and 1 km from the Museum of New Zealand Te Papa Tongarewa. " + "Streamlined rooms feature free Wi-Fi, flat-screen TVs, and tea and coffeemaking facilities, and sleep up to 4 guests." + " Upgraded rooms include breakfast. A breakfast buffet (fee) is served in a casual restaurant." + " There's also a lobby bar featuring a whimsical, black-and-white design scheme. " + "Additional amenities include a fitness centre and limited indoor parking (surcharge)." + "This contemporary hotel is a 7-minute walk from the Wellington City Libraries," + " 8 minutes on foot from City Gallery Wellington and 1 km from the Museum of New Zealand Te Papa Tongarewa." + " Streamlined rooms feature free Wi-Fi, flat-screen TVs, and tea and coffeemaking facilities, and sleep up to 4 guests." + " Upgraded rooms include breakfast. A breakfast buffet (fee) is served in a casual restaurant." + " There's also a lobby bar featuring a whimsical, black-and-white design scheme." + " Additional amenities include a fitness centre and limited indoor parking (surcharge).",
@@ -41,6 +44,7 @@ var hotel = [
     photo: "ibisRoom-Wellington.jpg"
   },
   {
+    id: 4,
     name: "Copthorne Auckland",
     stars: "4stars.png",
     description: "A restaurant, a bar/lounge, and self parking are available at this smoke-free hotel." + " WiFi in public areas is free. Other amenities include 24-hour room service, concierge services, and dry cleaning. " + "All 110 soundproofed rooms provide free WiFi, free wired Internet, and 24-hour room service." + " For a bit of entertainment, plasma TVs come with cable channels, and guests can also appreciate conveniences like refrigerators and electric kettles.",
@@ -54,6 +58,7 @@ var hotel = [
     photo: "CopthorneHotelRoom-Auckland.jpg"
   },
   {
+    id: 5,
     name: "Rydges Auckland",
     stars: "4stars.png",
     description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
@@ -67,6 +72,7 @@ var hotel = [
     photo: "rydgesRoom-Auckland.jpg"
   },
   {
+    id: 6,
     name: "Skycity Hotel Auckland",
     stars: "4stars.png",
     description: "Along with 15 restaurants, this smoke-free hotel has a full-service spa and a casino." + " WiFi in public areas is free. Other amenities include 8 bars/lounges, a fitness center, and 2 coffee shops/cafés." + " All 323 rooms offer free WiFi and free wired Internet, plus iPod docks and flat-screen TVs with cable channels." + " Guests will also find 24-hour room service, refrigerators, and minibars.",
@@ -80,6 +86,7 @@ var hotel = [
     photo: "SKYCITYHotelAucklandRoom.jpg"
   },
   {
+    id: 7,
     name: "Heartland Hotel Queenstown",
     stars: "4stars.png",
     description: "Along with a restaurant, this smoke-free hotel has a bar/lounge and a coffee shop/café." + " Free WiFi in public areas and free self parking are also provided." + " Other amenities include 24-hour room service, dry cleaning, and laundry facilities." + " All 81 rooms offer free WiFi, 24-hour room service, and TVs with satellite channels." + " Guests will also find refrigerators, hair dryers, and phones.",
@@ -93,6 +100,7 @@ var hotel = [
     // photo: ""
   },
   {
+    id: 8,
     name: "Rydges Lakeland Resort Queenstown",
     stars: "3stars.png",
     description: "Along with a restaurant, this smoke-free hotel has an outdoor pool and a bar/lounge." + " WiFi in public areas is free. Other amenities include a sauna, a rooftop terrace, and self parking." + " All 165 rooms provide conveniences like refrigerators and coffee makers, plus 24-hour room service and plasma TVs." + " Free newspapers, in-room massages, and hair dryers are among the other amenities that guests will find.",
@@ -106,6 +114,7 @@ var hotel = [
     // photo:
   },
   {
+    id: 9,
     name: "Novotel Queenstown Lakeside",
     stars: "4stars.png",
     description: "A restaurant, a fitness center, and a bar/lounge are available at this hotel. " + "WiFi in public areas is free. Other amenities include a spa tub, valet parking, and 24-hour room service. " + "All 273 rooms offer WiFi, balconies or patios, and LCD TVs with satellite channels. " + "Other amenities available to guests include 24-hour room service, wired Internet, and minibars.",
@@ -479,6 +488,55 @@ var hostel = [
   }
 
 ]
+
+var maxNumberOnScreen = 8;
+
+// PAGINATION RULES SET
+
+function clickOnPagination(num){
+    // console.log('page clicked on ' + num);
+    var max = num * maxNumberOnScreen;
+    var min = max - maxNumberOnScreen;
+
+    if(max > hotel.length){
+        max = hotel.length;
+    }
+    showHotelThumbnails(min, max);
+}
+
+function showHotelThumbnails(start, end){
+  document.getElementsByClassNameById('hotels').innerHTML = "";
+    for (var i = start; i < end; i++) {
+      var hotel = hotels[i];
+
+        var hotelCard = '<div class="col-12 col-sm-6 col-md-3 mb-3 text-center">';
+            hotelCard += '<div class="card border-primary h-100 hotelThumb" data-id="'+hotel.id+'">';
+                hotelCard += '<img src="images/'+hotel.thumbnail+'" class="card-img-top" alt="">';
+                hotelCard += '<div class="card-body">';
+                    hotelCard += '<h5 class="card-title">'+hotel.name+'</h5>';
+                      hotelCard += '<p>'+hotel.description+'</p>';
+                        hotelCard += '<img src="images/'+hotel.stars+'" class="card-img-bottom" alt="">';
+                hotelCard += '</div>';
+                
+            hotelCard += '</div>';
+        hotelCard += '</div>';
+
+        document.getElementById('hotels').innerHTML += hotelCard;
+    }
+
+    var hotelThumbnails = document.getElementsByClassName('hotelThumb');
+    for (var i = 0; i < hotelThumbnails.length; i++) {
+      var id = parseInt(hotelThumbnails[i].dataset.id);
+      hotelThumbnails[i].onclick = function(){
+        var id= parseInt(this.dataset.id);
+        showMoreHotels(id);
+      };
+    }
+}
+
+
+
+
 
 $( function() {
   $( "#datePicker1" ).datepicker();

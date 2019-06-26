@@ -1,9 +1,4 @@
-.banner-search-overlay{
-  @include align-center;
-  background-color: hsla(0, 0%, 20%, 0.6);
-  width: 60%;
-  padding: 2%;
-}
+
 
 #datePicker1{
   border-radius: 5px;
@@ -13,4 +8,31 @@
 #datePicker2{
   border-radius: 5px;
   border-color: $blue;
+}
+
+#bannerSearch{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('images/auckland.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+@media (max-width: 575px) {
+  #bannerSearch{
+    background-image: url('images/aucklandCu.jpg');
+  }
+}
+
+.banner-search-overlay{
+  @include align-center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background-color: hsla(0, 0%, 20%, 0.6);
+  width: 60%;
+  padding: 2%;
 }

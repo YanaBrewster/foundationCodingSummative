@@ -23,22 +23,3 @@ $blue: #33CCFF;
 @import 'theme';
 @import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
-
-
-
-
-
-
-#close{
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 10px;
-  // color: #;
-  z-index: 100000000;
-}
-
-#close:hover{
-  // color: #;
-  cursor: pointer;
-}
