@@ -34,7 +34,168 @@ var allPlaces = [
         price: 157,
         thumbnail: "QTExterior-Wellington.jpg",
         photo: "QTRoom-Wellington.jpg"
-      }
+      },
+      {
+        id: 2,
+        name: "Copthorne Hotel Wellington Oriental Bay",
+        stars: 4,
+        description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 5,
+          minPeople: 1,
+          maxPeople: 2
+        },
+        amenities: ["Soundproof Rooms", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+        location: "Wellington",
+        address: "100 Oriental Parade, Oriental Bay, Wellington 6011",
+        nearby:[
+          {
+              place: "Te Papa",
+              walk: 8
+          },
+          {
+              place: "Courtenay Place",
+              walk: 8
+          },
+          {
+              place: "Mount Victoria Lookout",
+              walk: 18
+          }
+        ],
+        price: 157,
+        thumbnail: "corpthorneExterior-Wellington.jpg",
+        photo: "corpthorneRoom-Wellington.jpg"
+      },
+     {
+       id: 4,
+       name: "Copthorne Auckland",
+       stars: 4,
+       description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
+       sleeps: {
+         minLength: 1,
+         maxLength: 5,
+         minPeople: 1,
+         maxPeople: 2
+       },
+       amenities: ["Soundproof Rooms", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+       location: "Auckland",
+       address: "150 Anzac Avenue, Auckland",
+       nearby:[
+         {
+             place: "University of Auckland",
+             walk: 5
+         },
+         {
+             place: "Spark Arena",
+             walk: 9
+         },
+         {
+             place: "Queen Street Shopping District",
+             walk: 11
+         }
+       ],
+       price: 157,
+       thumbnail: "CopthorneHotelExterior-Auckland.jpg",
+       photo: "CopthorneHotelRoom-Auckland.jpg"
+     },
+     {
+       id: 5,
+       name: "Rydges Auckland",
+       stars: 4,
+       description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
+       sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
+       sleeps: {
+         minLength: 1,
+         maxLength: 5,
+         minPeople: 1,
+         maxPeople: 2
+       },
+       amenities: ["Air Conditioning", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+       location: "Auckland",
+       address: "59 Federal St, Auckland, 1010",
+       nearby:[
+         {
+             place: "SkyCity Casino",
+             walk: 2
+         },
+         {
+             place: "Sky Tower",
+             walk: 2
+         },
+         {
+             place: "Queen Street Shopping District",
+             walk: 3
+         }
+       ],
+       price: 157,
+       thumbnail: "rydgesExterior-Auckland.jpg",
+       photo: "rydgesRoom-Auckland.jpg"
+     },
+    {
+      id: 7,
+      name: "Rydges Auckland",
+      stars: 4,
+      description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
+      sleeps: {
+        minLength: 1,
+        maxLength: 5,
+        minPeople: 1,
+        maxPeople: 2
+      },
+      amenities: ["Free Parking", "Free Wifi", "Restaurant", "Breakfast Available", "Bar", "Room Service"],
+      location: "Queenstown",
+      address: "27 Stanley Street, Queenstown",
+      nearby:[
+        {
+            place: "Queenstown Mall",
+            walk: 4
+        },
+        {
+            place: "Queenstown Beach",
+            walk: 5
+        },
+        {
+            place: "Skycity Queenstown Casino",
+            walk: 6
+        }
+      ],
+      price: 157,
+      // thumbnail: "",
+      // photo: ""
+    },
+    {
+      id: 8,
+      name: "Rydges Lakeland Resort Queenstown",
+      stars: 3,
+      description: "Along with a restaurant, this smoke-free hotel has an outdoor pool and a bar/lounge." + " WiFi in public areas is free. Other amenities include a sauna, a rooftop terrace, and self parking." + " All 165 rooms provide conveniences like refrigerators and coffee makers, plus 24-hour room service and plasma TVs." + " Free newspapers, in-room massages, and hair dryers are among the other amenities that guests will find.",
+      sleeps: {
+        minLength: 1,
+        maxLength: 5,
+        minPeople: 1,
+        maxPeople: 2
+      },
+      amenities: ["Pool", "Free Wifi", "Restaurant", "Breakfast Available", "Bar", "Spa"],
+      location: "Queenstown",
+      address: "38-54 Lake Esplanade, Queenstown",
+      nearby:[
+        {
+            place: "Steamer Wharf",
+            walk: 6
+        },
+        {
+            place: "TSS Earnslaw Steamship",
+            walk: 7
+        },
+        {
+            place: "Fear Factory Queenstown",
+            walk: 8
+        }
+      ],
+      price: 157,
+      // thumbnail: "",
+      // photo: ""
+    },
     ]
   },
   {
@@ -72,6 +233,35 @@ var allPlaces = [
         thumbnail: "apolloMotelExterior-Wellington.jpg",
         photo: "apolloMotelRoom-Wellington.jpg"
       },
+      {
+        id: 11,
+        name: "Capital View Motor Inn",
+        stars: 4,
+        description: "Just 5 minutes' walk from Cuba Street's bars and restaurants," + " Capital View Motor Inn offers self-contained apartments with views of the harbor and Wellington city. " + "Guests enjoy free onsite parking and unlimited free WiFi." + " All accommodation offers a kitchen with a microwave, a hotplate and a refrigerator." + " Each apartment is equipped with heating, electric blankets and flat-screen satellite TV." + " Wellington Capital View Motor Inn is 15 minutes' from Lambton Quay. " + "It is a 5-minute drive from Basin Reserve Stadium and an 8-minute drive from Te Papa Museum.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Airport shuttle", "Good for kids", "Non-smoking rooms" ],
+        location: "Wellington",
+        address: "12 Thompson Street, 6011 Wellington",
+        nearby: [
+          {
+              place: "Cuba Street",
+              walk: 5
+          },
+          {
+              place: "Courtenay Place",
+              walk: 10
+          }
+        ],
+        price: 90,
+        thumbnail: "capitalViewMotorInnExterior-Wellington.jpg",
+        photo: "capitalViewMotorInnRoom-Wellington.jpg"
+      }
+
     ]
   },
   {
@@ -88,7 +278,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Wifi", "Air Conditioning", "TV", "Washer & Dryer", "Children Welcome"],
+        amenities: ["Free Wi-fi", "Air Conditioning", "TV", "Washer & Dryer", "Children Welcome"],
         location: "Wellington",
         address: "Thorndon, Wellington City, Wellington, New Zealand",
         nearby: [
@@ -108,6 +298,34 @@ var allPlaces = [
         price: 240,
         thumbnail: "balconySuiteExterior-Wellington.jpg",
         photo: "balconySuiteRoom-Wellington.jpg"
+      },
+      {
+        id: 20,
+        name: "Stunning contemporary city fringe town house",
+        stars: 5,
+        description: "Close to town in a sunny suburb with off street parking and close to bus stop." + " Cable car near by as is the university and Zealandia. " + "Easy access to motorway and ferry." + " Spoilt for choice with the number of native bush reserves and Botanic Garden near by." + " Iconic Kelburn village 10 minutes walk away with restaurants and bars." + " Quiet, established neighbourhood." + " Living room offers high stud, with open fire and heat pump" + " - open living with dining table and modern kitchen.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free-Wifi", "Air Conditioning", "No Smoking", "Children Welcome"],
+        location: "Wellington",
+        address: "Northland, Wellington City, Wellington, New Zealand",
+        nearby: [
+          {
+              place: "Iconic Kelburn village",
+              walk: 10
+          },
+          {
+              place: "Botanic Gardens",
+              walk: 10
+          }
+        ],
+        price: 240,
+        thumbnail: "cityfringetownhouseExterior-Wellington.jpg",
+        photo: "cityfringetownhouseRoom-Wellington.jpg"
       }
     ]
   },
@@ -145,7 +363,36 @@ var allPlaces = [
           price: 30,
           thumbnail: "yhaExterior-Wellington.jpg",
           photo: "yhaRoom-Wellington.jpg"
-      }
+      },
+
+      {
+        id: 29,
+        name: "Hotel Waterloo & Backpackers",
+        stars: 4,
+        description: "Hotel Waterloo & Backpackers offers budget accommodation in the centre of Wellington. " + "It features a 24-hour guest kitchen, self-service laundry facilities and a games room with pool tables." + " Guests receive 1GB of free WiFi per 24 hours. " + "Formerly the historic Hotel Waterloo, which hosted Queen Elizabeth II’s entourage on her 1953 Coronation Tour," + " the hostel features elegant staircases, high ceilings and a café in the old ballroom." + " Wellington Railway Station is only 200 m from Wellington Hotel Waterloo & Backpackers." + " It is an 8-minute walk to TSB Arena and a 12-minute walk to Westpac Stadium." + " Private and shared rooms are available. " + "All rooms include heating and bed linen is provided. " + "Each private room has a work desk and cable TV. Secure lockers are provided for all guests.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Family Rooms", "24-hour front desk", "Restaurant"],
+        location: "Wellington",
+        address: "1 Bunny Street, 6011 Wellington",
+        nearby: [
+          {
+              place: "Wellington Train Station",
+              walk: 1
+          },
+          {
+              place: "New World Metro",
+              walk: 2
+          },
+        ],
+        price: 30,
+        thumbnail: "HotelWaterlooBackpackersExterior-Wellington.jpg",
+        photo: "HotelWaterlooBackpackersRoom-Wellington.jpg
+    }
     ]
   }
 ]
@@ -153,20 +400,6 @@ var allPlaces = [
 
 // var hotel = [
 //
-//   {
-//     id: 2,
-//     name: "Copthorne Hotel Wellington Oriental Bay",
-//     stars: "4stars.png",
-//     description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
-//     sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
-//     amenities: "Soundproof Rooms, Free WiFi, Restaurant, " + "Breakfast Available, Business Services, Parking Available," + " Bar, Laundry, Room Service, Housekeeping, 24/7 Front Desk",
-//     location: "Wellington",
-//     address: "100 Oriental Parade, Oriental Bay, Wellington 6011",
-//     nearby: "Courtenay Place<br> 8 min walk <br> " + "Te Papa (Museum of New Zealand) <br> 8 min walk <br> Mount Victoria Lookout" + " <br> 18 min walk <br> Wellington (WLG-Wellington Intl.) <br> 12 min drive",
-//     price: 157,
-//     thumbnail: "corpthorneExterior-Wellington.jpg",
-//     photo: "corpthorneRoom-Wellington.jpg"
-//   },
 //   {
 //     id: 3,
 //     name: "ibis Wellington",
@@ -181,34 +414,7 @@ var allPlaces = [
 //     thumbnail: "ibisExterior-Wellington.jpg",
 //     photo: "ibisRoom-Wellington.jpg"
 //   },
-//   {
-//     id: 4,
-//     name: "Copthorne Auckland",
-//     stars: "4stars.png",
-//     description: "A restaurant, a bar/lounge, and self parking are available at this smoke-free hotel." + " WiFi in public areas is free. Other amenities include 24-hour room service, concierge services, and dry cleaning. " + "All 110 soundproofed rooms provide free WiFi, free wired Internet, and 24-hour room service." + " For a bit of entertainment, plasma TVs come with cable channels, and guests can also appreciate conveniences like refrigerators and electric kettles.",
-//     sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
-//     amenities: "Soundproof Rooms, Free WiFi, Restaurant," + " Breakfast Available, Business Services, Parking Available," + " Bar, Laundry, Room Service, Housekeeping, 24/7 Front Desk",
-//     location: "Auckland",
-//     address: "150 Anzac Avenue, Auckland",
-//     nearby: "University of Auckland <br> 5 min walk <br> Spark Arena " + " <br> 9 min walk  <br> Queen Street Shopping District" + " <br> 11 min walk <br> Auckland (AKL-Auckland Intl.)  <br> 20 min drive",
-//     price: 157,
-//     thumbnail: "CopthorneHotelExterior-Auckland.jpg",
-//     photo: "CopthorneHotelRoom-Auckland.jpg"
-//   },
-//   {
-//     id: 5,
-//     name: "Rydges Auckland",
-//     stars: "4stars.png",
-//     description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
-//     sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
-//     amenities: "Free WiFi, Air Conditioning, Restaurant, " + "Gym Breakfast Available, Business Services, Parking Available," + " Bar, Laundry, Room Service, Housekeeping, 24/7 Front Desk",
-//     location: "Auckland",
-//     address: "59 Federal St, Auckland, 1010",
-//     nearby: "SkyCity Casino <br> 2 min walk <br> " + "Sky Tower <br> 2 min walk <br> Queen Street Shopping District <br> 3 min walk <br>" + " Auckland Ferry Terminal <br> 9 min walk  <br> Viaduct Harbour <br>" + " 10 min walk <br> Auckland Britomart Station <br>" + " 10 min walk <br> Auckland (AKL-Auckland Intl.) <br> 27 min drive",
-//     price: 157,
-//     thumbnail: "rydgesExterior-Auckland.jpg",
-//     photo: "rydgesRoom-Auckland.jpg"
-//   },
+//
 //   {
 //     id: 6,
 //     name: "Skycity Hotel Auckland",
@@ -223,34 +429,7 @@ var allPlaces = [
 //     thumbnail: "SKYCITYHotelAucklandExterior.jpg",
 //     photo: "SKYCITYHotelAucklandRoom.jpg"
 //   },
-//   {
-//     id: 7,
-//     name: "Heartland Hotel Queenstown",
-//     stars: "4stars.png",
-//     description: "Along with a restaurant, this smoke-free hotel has a bar/lounge and a coffee shop/café." + " Free WiFi in public areas and free self parking are also provided." + " Other amenities include 24-hour room service, dry cleaning, and laundry facilities." + " All 81 rooms offer free WiFi, 24-hour room service, and TVs with satellite channels." + " Guests will also find refrigerators, hair dryers, and phones.",
-//     sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
-//     amenities: "Free WiFi, Free Parking, Restaurant," + " Breakfast Available, Bar, Laundry," + " Room Service, Housekeeping, 24/7 Front Desk",
-//     location: "Queenstown",
-//     address: "27 Stanley Street, Queenstown",
-//     nearby: "Queenstown Mall <br> 4 min walk <br> Queenstown Beach <br> 5 min walk" + " <br> Skycity Queenstown Casino <br> 6 min walk" + " <br> Queenstown (ZQN-Queenstown Intl.) <br> 8 min drive",
-//     price: 157,
-//     // thumbnail: "",
-//     // photo: ""
-//   },
-//   {
-//     id: 8,
-//     name: "Rydges Lakeland Resort Queenstown",
-//     stars: "3stars.png",
-//     description: "Along with a restaurant, this smoke-free hotel has an outdoor pool and a bar/lounge." + " WiFi in public areas is free. Other amenities include a sauna, a rooftop terrace, and self parking." + " All 165 rooms provide conveniences like refrigerators and coffee makers, plus 24-hour room service and plasma TVs." + " Free newspapers, in-room massages, and hair dryers are among the other amenities that guests will find.",
-//     sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
-//     amenities: "Pool, Free WiFi, Spa, Restaurant," + " Breakfast Available, Business Services, Parking Available," + " Bar, Laundry, Room Service, Housekeeping, 24/7 Front Desk",
-//     location: "Queenstown",
-//     address: "38-54 Lake Esplanade, Queenstown",
-//     nearby: "Steamer Wharf <br> 6 min walk " + "<br> TSS Earnslaw Steamship <br> 7 min walk <br>" + " Fear Factory Queenstown <br> 8 min walk <br> Queenstown (ZQN-Queenstown Intl.)" + " <br> 10 min drive",
-//     price: 157,
-//     // thumbnail:,
-//     // photo:
-//   },
+//
 //   {
 //     id: 9,
 //     name: "Novotel Queenstown Lakeside",
@@ -269,20 +448,7 @@ var allPlaces = [
 //
 // var motel = [
 //
-// {
-//   id: 11,
-//   name: "Capital View Motor Inn",
-//   stars: "4stars.png",
-//   description: "Just 5 minutes' walk from Cuba Street's bars and restaurants," + " Capital View Motor Inn offers self-contained apartments with views of the harbor and Wellington city. " + "Guests enjoy free onsite parking and unlimited free WiFi." + " All accommodation offers a kitchen with a microwave, a hotplate and a refrigerator." + " Each apartment is equipped with heating, electric blankets and flat-screen satellite TV." + " Wellington Capital View Motor Inn is 15 minutes' from Lambton Quay. " + "It is a 5-minute drive from Basin Reserve Stadium and an 8-minute drive from Te Papa Museum.",
-//   sleeps: "2-4 people <br> min stay 3 nights, max stay 10 nights",
-//   amenities: "Free parking,  Free WiFi, " + " Family rooms,  Non-smoking rooms",
-//   location: "Wellington",
-//   address: "12 Thompson Street, 6011 Wellington",
-//   nearby: "Cuba Street <br> 5mins",
-//   price: 90,
-//   thumbnail: "capitalViewMotorInnExterior-Wellington.jpg",
-//   photo: "capitalViewMotorInnRoom-Wellington.jpg"
-// },
+
 // {
 //   id: 12,
 //   name: "Marksman Motor Inn",
@@ -386,20 +552,6 @@ var allPlaces = [
 // var house = [
 //
 // {
-//   id: 20,
-//   name: "Stunning contemporary city fringe town house",
-//   stars: "5stars.png",
-//   description: "Close to town in a sunny suburb with off street parking and close to bus stop." + " Cable car near by as is the university and Zealandia. " + "Easy access to motorway and ferry." + " Spoilt for choice with the number of native bush reserves and Botanic Garden near by." + " Iconic Kelburn village 10 minutes walk away with restaurants and bars." + " Quiet, established neighbourhood." + " Living room offers high stud, with open fire and heat pump" + " - open living with dining table and modern kitchen.",
-//   sleeps: "1-4 people <br> min stay 2 nights, max stay 15 nights",
-//   amenities: "Good for families, Air Conditioning, No Smoking, Internet",
-//   location: "Wellington",
-//   address: "Northland, Wellington City, Wellington, New Zealand",
-//   nearby: "Botanic Gardens Iconic Kelburn village <br> 10 min walk",
-//   price: 240,
-//   thumbnail: "cityfringetownhouseExterior-Wellington.jpg",
-//   photo: "cityfringetownhouseRoom-Wellington.jpg"
-// },
-// {
 //   id: 21,
 //   name: "Architecturally designed Studio apartment",
 //   stars: "4stars.png",
@@ -501,20 +653,7 @@ var allPlaces = [
 //
 // var hostel = [
 //
-// {
-//   id: 29,
-//   name: "Hotel Waterloo & Backpackers",
-//   stars: "4stars.png",
-//   description: "Hotel Waterloo & Backpackers offers budget accommodation in the centre of Wellington. " + "It features a 24-hour guest kitchen, self-service laundry facilities and a games room with pool tables." + " Guests receive 1GB of free WiFi per 24 hours. " + "Formerly the historic Hotel Waterloo, which hosted Queen Elizabeth II’s entourage on her 1953 Coronation Tour," + " the hostel features elegant staircases, high ceilings and a café in the old ballroom." + " Wellington Railway Station is only 200 m from Wellington Hotel Waterloo & Backpackers." + " It is an 8-minute walk to TSB Arena and a 12-minute walk to Westpac Stadium." + " Private and shared rooms are available. " + "All rooms include heating and bed linen is provided. " + "Each private room has a work desk and cable TV. Secure lockers are provided for all guests.",
-//   sleeps: "1 person <br> min stay 1 night, max stay 10 nights",
-//   amenities: "Free WiFi, Family rooms, Non-smoking rooms," + " 24-hour front desk, Restaurant, " + "Facilities for disabled guests, Bar",
-//   location: "Wellington",
-//   address: "1 Bunny Street, 6011 Wellington",
-//   nearby: "Wellington Train Station <br> 1 min walk " + "<br> New World Metro  <br> 1 min walk ",
-//   price: 30,
-//   thumbnail: "HotelWaterlooBackpackersExterior-Wellington.jpg",
-//   photo: "HotelWaterlooBackpackersRoom-Wellington.jpg"
-// },
+
 // {
 //   id: 30,
 //   name: "Nomads Capital Backpackers",
@@ -616,50 +755,6 @@ var allPlaces = [
 // ]
 
 
-var maxNumberOnScreen = 8;
-
-// PAGINATION RULES SET
-
-function clickOnPagination(num){
-    // console.log('page clicked on ' + num);
-    var max = num * maxNumberOnScreen;
-    var min = max - maxNumberOnScreen;
-
-    if(max > hotel.length){
-        max = hotel.length;
-    }
-    showHotelThumbnails(min, max);
-}
-
-function showHotelThumbnails(start, end){
-  document.getElementsByClassNameById('hotels').innerHTML = "";
-    for (var i = start; i < end; i++) {
-      var hotel = hotels[i];
-
-        var hotelCard = '<div class="col-12 col-sm-6 col-md-3 mb-3 text-center">';
-            hotelCard += '<div class="card border-primary h-100 hotelThumb" data-id="'+hotel.id+'">';
-                hotelCard += '<img src="images/'+hotel.thumbnail+'" class="card-img-top" alt="">';
-                hotelCard += '<div class="card-body">';
-                    hotelCard += '<h5 class="card-title">'+hotel.name+'</h5>';
-                      hotelCard += '<p>'+hotel.description+'</p>';
-                        hotelCard += '<img src="images/'+hotel.stars+'" class="card-img-bottom" alt="">';
-                hotelCard += '</div>';
-
-            hotelCard += '</div>';
-        hotelCard += '</div>';
-
-        document.getElementById('hotels').innerHTML += hotelCard;
-    }
-
-    var hotelThumbnails = document.getElementsByClassName('hotelThumb');
-    for (var i = 0; i < hotelThumbnails.length; i++) {
-      var id = parseInt(hotelThumbnails[i].dataset.id);
-      hotelThumbnails[i].onclick = function(){
-        var id= parseInt(this.dataset.id);
-        showMoreHotels(id);
-      };
-    }
-}
 
 // MEAL OBJECT
 
