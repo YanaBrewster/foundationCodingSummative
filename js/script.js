@@ -756,7 +756,4 @@ $( function() {
             }
         });
 
-        $scope.Submitshow=function(){
-          $scope.
-        }
     });
