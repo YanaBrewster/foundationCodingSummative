@@ -68,23 +68,88 @@
               <input type="text" placeholder=" Check out date"  id="datePicker2">
             </div>
             <div class="col-12 col-lg mb-2">
-              <button type="button" class="btn btn-primary text-white mt-2 ">Search</button>
+              <input type="submit" name="submit" value="Search" class="btn btn-primary text-white">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
-  <div class="container-fluid">
-    <div id="hotels">
+  <!-- CHECKOUT PAGE -->
+  <div class="container">
+          <div class="row">
+          <div class="col">
+            <div class="mb-4 mt-4 pt-4 pb-4 col-6 border border-primary rounded">
+              <h3 class="text-primary">Booking Summary</h3>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="mealOption">
+            <h3>Meal Option</h3>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="breakfast" id="breakfast1" value="option1">
+              <label class="form-check-label" for="breakfast1">
+                Option 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="breakfast" id="breakfast2" value="option2">
+              <label class="form-check-label" for="breakfast2">
+                Option 2
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+              <div class="row">
+                      <div class="col-12 mt-4">
+                          <h3>Make your booking</h3>
+                          <form method="post" id="checkoutForm" onSubmit="return validation();">
+                              <div class="form-group">
+                                  <div class="form-group">
+                                      <label class="font-weight-bold">Full Name</label><br>
+                                       <!-- <input name="name" class="col-6" type="text" minlength="2" maxlength="26" placeholder="Enter Full Name" required> -->
+                                      <input type="text" name="name" id="name" class="form-control col-6" placeholder="Enter Full Name">
+                                  </div>
+                                  <label class="font-weight-bold">Email</label>
+                                  <div class="input-group mb-4">
+                                      <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
+                                      <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="font-weight-bold">Phone Number</label><br>
+                                       <!-- <input name="phone" class="col-6" type="number" minlength="6" maxlength="10" placeholder="(000)-(0000000)" required> -->
+                                      <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
+                                  </div>
+                                  <div class="form-group float-right">
+                                      <input type="submit" name="submit" value="Confirm Booking" class="btn btn-primary text-white">
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+          </div>
 
+<!-- BOOKING CONFIRMED PAGE -->
+          <div class="container">
+            <div>
+              <div class="mb-4 mt-4 pt-4 pb-4 col-12 border border-primary rounded text-center">
+                <h3 class="text-primary">Booking Confirmed</h3>
+                <p>Thank you for booking your stay with us, we look forward to your visit.<br>You can pay for your room on arrival with eftpos or credit card.
+                </p>
+                <button type="button" class="btn btn-primary text-white">Make Another Booking</button>
+              </div>
+            </div>
+          </div>
+
+      </div>
     </div>
-    <h2 class=" justify-content-center">Search Results</h2>
-  </div>
 
-  <div id="accomPopUp" class="overlay">
+<!-- POP UP PAGE -->
+  <!-- <div id="accomPopUp" class="overlay">
       <div class="overlayContent rounded pr-2">
           <div class="row h-100">
               <div class="col-12 h-100">
@@ -109,7 +174,7 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
 
 <footer class="navbar fixed-bottom footer-colour-l justify-content-center">
