@@ -12,21 +12,19 @@
 <body>
 
   <nav class="navbar navbar-dark bg-primary justify-content-center">
-    <span class="navbar-brand mb-0"><h1>Kiwi Getaway</h1></span>
+    <div class="navbar-brand mb-0"><h1>Kiwi Getaway</h1></div>
   </nav>
   <div class="row">
     <div class="col">
-      <div class="#">
-        <img src="images/auckland.jpg" class="img-fluid" alt="Auckland">
+      <div class="banner-search">
         <div class="banner-search-overlay">
-
           <div class="row">
             <div class="col mb-2">
               <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuDestination" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Destination
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Auckland</a>
                   <a class="dropdown-item" href="#">Wellington</a>
                   <a class="dropdown-item" href="#">Queenstown</a>
@@ -35,10 +33,10 @@
             </div>
             <div class="col mb-2">
               <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuTravellers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   No. of travellers
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">1</a>
                   <a class="dropdown-item" href="#">1-2</a>
                   <a class="dropdown-item" href="#">2-4</a>
@@ -47,11 +45,11 @@
               </div>
             </div>
             <div class="col mb-2">
-              <div class="dropdown mb-4">
-                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown mb-2">
+                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Accommodation type
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Hotel</a>
                   <a class="dropdown-item" href="#">Motel</a>
                   <a class="dropdown-item" href="#">House</a>
@@ -68,117 +66,112 @@
               <input type="text" placeholder=" Check out date"  id="datePicker2">
             </div>
             <div class="col-12 col-lg mb-2">
-              <input type="submit" name="submit" value="Search" class="btn btn-primary text-white">
+              <div input type="submit" name="submit" value="Search" class="btn btn-primary text-white"></div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
 
   <!-- CHECKOUT PAGE -->
   <div class="container">
-          <div class="row">
-          <div class="col">
-            <div class="mb-4 mt-4 pt-4 pb-4 col-6 border border-primary rounded">
-              <h3 class="text-primary">Booking Summary</h3>
-            </div>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="mealOption">
-            <h3>Meal Option</h3>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="breakfast" id="breakfast1" value="option1">
-              <label class="form-check-label" for="breakfast1">
-                Option 1
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="breakfast" id="breakfast2" value="option2">
-              <label class="form-check-label" for="breakfast2">
-                Option 2
-              </label>
-            </div>
-          </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-4 mt-4 pt-4 pb-4 col-6 border border-primary rounded">
+          <h3 class="text-primary">Booking Summary</h3>
         </div>
-      </div>
-              <div class="row">
-                      <div class="col-12 mt-4">
-                          <h3>Make your booking</h3>
-                          <form method="post" id="checkoutForm" onSubmit="return validation();">
-                              <div class="form-group">
-                                  <div class="form-group">
-                                      <label class="font-weight-bold">Full Name</label><br>
-                                       <!-- <input name="name" class="col-6" type="text" minlength="2" maxlength="26" placeholder="Enter Full Name" required> -->
-                                      <input type="text" name="name" id="name" class="form-control col-6" placeholder="Enter Full Name">
-                                  </div>
-                                  <label class="font-weight-bold">Email</label>
-                                  <div class="input-group mb-4">
-                                      <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
-                                      <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label class="font-weight-bold">Phone Number</label><br>
-                                       <!-- <input name="phone" class="col-6" type="number" minlength="6" maxlength="10" placeholder="(000)-(0000000)" required> -->
-                                      <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
-                                  </div>
-                                  <div class="form-group float-right">
-                                      <input type="submit" name="submit" value="Confirm Booking" class="btn btn-primary text-white">
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-          </div>
-
-<!-- BOOKING CONFIRMED PAGE -->
-          <div class="container">
-            <div>
-              <div class="mb-4 mt-4 pt-4 pb-4 col-12 border border-primary rounded text-center">
-                <h3 class="text-primary">Booking Confirmed</h3>
-                <p>Thank you for booking your stay with us, we look forward to your visit.<br>You can pay for your room on arrival with eftpos or credit card.
-                </p>
-                <button type="button" class="btn btn-primary text-white">Make Another Booking</button>
-              </div>
-            </div>
-          </div>
-
       </div>
     </div>
-
-<!-- POP UP PAGE -->
-  <!-- <div id="accomPopUp" class="overlay">
-      <div class="overlayContent rounded pr-2">
-          <div class="row h-100">
-              <div class="col-12 h-100">
-                  <img id="photo" longdesc=""src="" class="h-100 img-fluid rounded-left" alt="">
-              </div>
-              <div class="col-12 col-lg-6">
-                  <h2 id="name" class="text-left mt-4"></h2>
-                  <img id="stars" longdesc=""src="" class="h-100 img-fluid" alt="">
-                  <p id="description"></p>
-                  <p id="sleeps"></p>
-                  <p id="amenities"></p>
-              </div>
-              <div class="col-12 col-lg-6">
-                  <p id="location"></p>
-                  <p id="address"></p>
-                  <p id="nearby"></p>
-                  <p id="price"></p>
-              </div>
+    <div class="row">
+      <div class="col">
+        <div id="mealOption">
+          <h3>Meal Option</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="breakfast" id="breakfast1" value="option1">
+            <label class="form-check-label" for="breakfast1">
+              Option 1
+            </label>
           </div>
-        <div id="close">
-          <i class="fas fa-times fa-2x"></i>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="breakfast" id="breakfast2" value="option2">
+            <label class="form-check-label" for="breakfast2">
+              Option 2
+            </label>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h3>Make your booking</h3>
+        <form method="post" id="checkoutForm" onSubmit="return validation();">
+          <div class="form-group">
+            <div class="form-group">
+              <label class="font-weight-bold">Full Name</label><br>
+              <input type="text" name="name" id="name" class="form-control col-6" placeholder="Enter Full Name">
+            </div>
+            <label class="font-weight-bold">Email</label>
+            <div class="input-group mb-4">
+              <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
+              <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold">Phone Number</label><br>
+              <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
+            </div>
+            <div class="form-group float-right">
+              <input type="submit" name="submit" value="Confirm Booking" class="btn btn-primary text-white">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    </div> -->
+  <!-- BOOKING CONFIRMED PAGE -->
+  <div class="container">
+    <div>
+      <div class="mb-4 mt-4 pt-4 pb-4 col-12 border border-primary rounded text-center">
+        <h3 class="text-primary">Booking Confirmed</h3>
+        <p>Thank you for booking your stay with us, we look forward to your visit.<br>You can pay for your room on arrival with eftpos or credit card.
+        </p>
+        <button type="button" class="btn btn-primary text-white">Make Another Booking</button>
+      </div>
+    </div>
+  </div>
 
 
-<footer class="navbar fixed-bottom footer-colour-l justify-content-center">
-  <span class="navbar-brand"><p>Supported by Tourism New Zealand</p></span>
+<!-- POP UP PAGE -->
+<!-- <div id="accomPopUp" class="overlay">
+<div class="overlayContent rounded pr-2">
+<div class="row h-100">
+<div class="col-12 h-100">
+<img id="photo" longdesc=""src="" class="h-100 img-fluid rounded-left" alt="">
+</div>
+<div class="col-12 col-lg-6">
+<h2 id="name" class="text-left mt-4"></h2>
+<img id="stars" longdesc=""src="" class="h-100 img-fluid" alt="">
+<p id="description"></p>
+<p id="sleeps"></p>
+<p id="amenities"></p>
+</div>
+<div class="col-12 col-lg-6">
+<p id="location"></p>
+<p id="address"></p>
+<p id="nearby"></p>
+<p id="price"></p>
+</div>
+</div>
+<div id="close">
+<i class="fas fa-times fa-2x"></i>
+</div>
+</div>
+
+</div> -->
+
+
+<footer class="navbar bg-secondary justify-content-center">
+  <div class="navbar-brand text-white"><p>Supported by Tourism New Zealand</p></div>
 </footer>
 
 <script src="js/jquery-3.4.1.min.js"> </script>

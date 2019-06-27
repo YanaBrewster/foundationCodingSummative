@@ -1,8 +1,3 @@
-.footer-colour-l{
-  background-color: $grayBranding;
-  color: white;
-  height: 20%;
-}
 
 // POP UP
 
@@ -21,7 +16,7 @@
 }
 
 #close:hover{
-  color: $grayBranding;
+  color: $secondary;
   cursor: pointer;
 }
 

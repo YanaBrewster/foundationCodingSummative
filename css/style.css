@@ -21,7 +21,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #33CCFF;
-  --secondary: #6c757d;
+  --secondary: #333333;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -1247,18 +1247,18 @@ pre {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #d6d8db; }
+  background-color: #c6c6c6; }
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #b3b7bb; }
+  border-color: #959595; }
 
 .table-hover .table-secondary:hover {
-  background-color: #c8cbcf; }
+  background-color: #b9b9b9; }
   .table-hover .table-secondary:hover > td,
   .table-hover .table-secondary:hover > th {
-    background-color: #c8cbcf; }
+    background-color: #b9b9b9; }
 
 .table-success,
 .table-success > th,
@@ -1848,24 +1848,24 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d; }
+  background-color: #333333;
+  border-color: #333333; }
   .btn-secondary:hover {
     color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62; }
+    background-color: #202020;
+    border-color: #1a1a1a; }
   .btn-secondary:focus, .btn-secondary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d; }
+    background-color: #333333;
+    border-color: #333333; }
   .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #545b62;
-    border-color: #4e555b; }
+    background-color: #1a1a1a;
+    border-color: #131313; }
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5); }
 
 .btn-success {
   color: #fff;
@@ -2013,23 +2013,23 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(51, 204, 255, 0.5); }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d; }
+  color: #333333;
+  border-color: #333333; }
   .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d; }
+    background-color: #333333;
+    border-color: #333333; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5); }
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-    color: #6c757d;
+    color: #333333;
     background-color: transparent; }
   .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d; }
+    background-color: #333333;
+    border-color: #333333; }
     .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5); }
 
 .btn-outline-success {
   color: #28a745;
@@ -3536,13 +3536,13 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #fff;
-  background-color: #6c757d; }
+  background-color: #333333; }
   a.badge-secondary:hover, a.badge-secondary:focus {
     color: #fff;
-    background-color: #545b62; }
+    background-color: #1a1a1a; }
   a.badge-secondary:focus, a.badge-secondary.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5); }
 
 .badge-success {
   color: #fff;
@@ -3650,13 +3650,13 @@ input[type="button"].btn-block {
     color: #12485b; }
 
 .alert-secondary {
-  color: #383d41;
-  background-color: #e2e3e5;
-  border-color: #d6d8db; }
+  color: #1b1b1b;
+  background-color: #d6d6d6;
+  border-color: #c6c6c6; }
   .alert-secondary hr {
-    border-top-color: #c8cbcf; }
+    border-top-color: #b9b9b9; }
   .alert-secondary .alert-link {
-    color: #202326; }
+    color: #020202; }
 
 .alert-success {
   color: #155724;
@@ -3897,15 +3897,15 @@ input[type="button"].btn-block {
     border-color: #1b6a85; }
 
 .list-group-item-secondary {
-  color: #383d41;
-  background-color: #d6d8db; }
+  color: #1b1b1b;
+  background-color: #c6c6c6; }
   .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-    color: #383d41;
-    background-color: #c8cbcf; }
+    color: #1b1b1b;
+    background-color: #b9b9b9; }
   .list-group-item-secondary.list-group-item-action.active {
     color: #fff;
-    background-color: #383d41;
-    border-color: #383d41; }
+    background-color: #1b1b1b;
+    border-color: #1b1b1b; }
 
 .list-group-item-success {
   color: #155724;
@@ -4596,12 +4596,12 @@ button.bg-primary:focus {
   background-color: deepskyblue !important; }
 
 .bg-secondary {
-  background-color: #6c757d !important; }
+  background-color: #333333 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important; }
+  background-color: #1a1a1a !important; }
 
 .bg-success {
   background-color: #28a745 !important; }
@@ -4691,7 +4691,7 @@ button.bg-dark:focus {
   border-color: #33CCFF !important; }
 
 .border-secondary {
-  border-color: #6c757d !important; }
+  border-color: #333333 !important; }
 
 .border-success {
   border-color: #28a745 !important; }
@@ -7443,10 +7443,10 @@ a.text-primary:hover, a.text-primary:focus {
   color: #00ace6 !important; }
 
 .text-secondary {
-  color: #6c757d !important; }
+  color: #333333 !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #494f54 !important; }
+  color: #0d0d0d !important; }
 
 .text-success {
   color: #28a745 !important; }
@@ -7614,11 +7614,6 @@ h4 {
 p {
   font-family: 'IBM Plex Sans', sans-serif; }
 
-.footer-colour-l {
-  background-color: #333333;
-  color: white;
-  height: 20%; }
-
 .hotelThumb:hover {
   opacity: 0.5;
   cursor: pointer; }
@@ -7668,27 +7663,124 @@ body, html {
   border-radius: 5px;
   border-color: #33CCFF; }
 
-#bannerSearch {
+.banner-search {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   background-image: url("images/auckland.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
 
-@media (max-width: 575px) {
-  #bannerSearch {
-    background-image: url("images/aucklandCu.jpg"); } }
 .banner-search-overlay {
   text-align: center;
   margin: 0 auto;
+  border-radius: 5px;
   position: absolute;
   top: 30%;
   left: 20%;
   background-color: rgba(51, 51, 51, 0.6);
   width: 60%;
-  padding: 2%; }
+  padding: 2.5%;
+  padding-top: 3%; }
+
+@media (max-width: 575px) {
+  .banner-search {
+    height: 70vh;
+    background-image: url("images/aucklandCu.jpg"); }
+
+  .banner-search-overlay {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%; } }
+.ui-datepicker {
+  width: 305px;
+  height: 305px;
+  margin: 5px auto 0;
+  font: 16px 'IBM Plex Sans', sans-serif; }
+
+.ui-datepicker table {
+  width: 100%; }
+
+.ui-datepicker-header {
+  background: white;
+  color: #33CCFF;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-width: 0 0 0 0; }
+
+.ui-datepicker-title {
+  text-align: center;
+  font-size: 1em; }
+
+.ui-datepicker-prev {
+  float: left;
+  cursor: pointer;
+  background-position: center -30px; }
+
+.ui-datepicker-next {
+  float: right;
+  cursor: pointer;
+  background-position: center 0px; }
+
+.ui-datepicker thead {
+  background-color: white; }
+
+.ui-datepicker th {
+  background-color: #33CCFF;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white; }
+
+.ui-datepicker tbody td {
+  padding: 0px; }
+
+.ui-datepicker tbody td:last-child {
+  border-right: 0px; }
+
+.ui-datepicker tbody tr {
+  border-bottom: 0px; }
+
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px; }
+
+.ui-datepicker a {
+  text-decoration: none; }
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white; }
+
+.ui-datepicker-calendar .ui-state-default {
+  background: white;
+  color: #333333;
+  border: solid 1px #33CCFF;
+  border-radius: 5px;
+  margin: 1px;
+  height: 35px;
+  width: 35px; }
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #33CCFF;
+  color: white; }
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #333333;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #33CCFF;
+  border: 2px solid #33CCFF;
+  position: relative;
+  margin: -1px; }
+
+.ui-datepicker-unselectable .ui-state-default {
+  background: white;
+  color: #000; }
 
 #datePicker1 {
   border-radius: 5px;
@@ -7698,26 +7790,123 @@ body, html {
   border-radius: 5px;
   border-color: #33CCFF; }
 
-#bannerSearch {
+.banner-search {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   background-image: url("images/auckland.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
 
-@media (max-width: 575px) {
-  #bannerSearch {
-    background-image: url("images/aucklandCu.jpg"); } }
 .banner-search-overlay {
   text-align: center;
   margin: 0 auto;
+  border-radius: 5px;
   position: absolute;
   top: 30%;
   left: 20%;
   background-color: rgba(51, 51, 51, 0.6);
   width: 60%;
-  padding: 2%; }
+  padding: 2.5%;
+  padding-top: 3%; }
+
+@media (max-width: 575px) {
+  .banner-search {
+    height: 70vh;
+    background-image: url("images/aucklandCu.jpg"); }
+
+  .banner-search-overlay {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%; } }
+.ui-datepicker {
+  width: 305px;
+  height: 305px;
+  margin: 5px auto 0;
+  font: 16px 'IBM Plex Sans', sans-serif; }
+
+.ui-datepicker table {
+  width: 100%; }
+
+.ui-datepicker-header {
+  background: white;
+  color: #33CCFF;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-width: 0 0 0 0; }
+
+.ui-datepicker-title {
+  text-align: center;
+  font-size: 1em; }
+
+.ui-datepicker-prev {
+  float: left;
+  cursor: pointer;
+  background-position: center -30px; }
+
+.ui-datepicker-next {
+  float: right;
+  cursor: pointer;
+  background-position: center 0px; }
+
+.ui-datepicker thead {
+  background-color: white; }
+
+.ui-datepicker th {
+  background-color: #33CCFF;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white; }
+
+.ui-datepicker tbody td {
+  padding: 0px; }
+
+.ui-datepicker tbody td:last-child {
+  border-right: 0px; }
+
+.ui-datepicker tbody tr {
+  border-bottom: 0px; }
+
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px; }
+
+.ui-datepicker a {
+  text-decoration: none; }
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white; }
+
+.ui-datepicker-calendar .ui-state-default {
+  background: white;
+  color: #333333;
+  border: solid 1px #33CCFF;
+  border-radius: 5px;
+  margin: 1px;
+  height: 35px;
+  width: 35px; }
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #33CCFF;
+  color: white; }
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #333333;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #33CCFF;
+  border: 2px solid #33CCFF;
+  position: relative;
+  margin: -1px; }
+
+.ui-datepicker-unselectable .ui-state-default {
+  background: white;
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */

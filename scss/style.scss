@@ -1,5 +1,3 @@
-$grayBranding: #333333;
-
 $grid-breakpoints: (
   xs: 0,
   sm: 500px,
@@ -9,7 +7,7 @@ $grid-breakpoints: (
 );
 
 $blue: #33CCFF;
-
+$secondary: #333333;
 
 @import 'bootstrap/bootstrap';
 
