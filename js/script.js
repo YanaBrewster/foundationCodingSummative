@@ -1,4 +1,6 @@
 // console.log("hello");
+var placesCards = document.getElementById("placeDetails")
+
 var allPlaces = [
   {
     type: "hotel",
@@ -134,7 +136,7 @@ var allPlaces = [
      },
     {
       id: 7,
-      name: "Rydges Auckland",
+      name: "Heartland Hotel Queenstown",
       stars: 4,
       description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
       sleeps: {
@@ -161,8 +163,8 @@ var allPlaces = [
         }
       ],
       price: 157,
-      // thumbnail: "",
-      // photo: ""
+      thumbnail: "HeartlandHotelQueenstownExterior.jpg",
+      photo: "HeartlandHotelQueenstownRoom.jpg"
     },
     {
       id: 8,
@@ -193,8 +195,8 @@ var allPlaces = [
         }
       ],
       price: 157,
-      // thumbnail: "",
-      // photo: ""
+      thumbnail: "RydgesLakelandResortQueenstownExterior.jpg",
+      photo: "RydgesLakelandResortQueenstownRoom.jpg"
     },
     ]
   },
@@ -391,11 +393,63 @@ var allPlaces = [
         ],
         price: 30,
         thumbnail: "HotelWaterlooBackpackersExterior-Wellington.jpg",
-        photo: "HotelWaterlooBackpackersRoom-Wellington.jpg
+        photo: "HotelWaterlooBackpackersRoom-Wellington.jpg"
     }
     ]
   }
 ]
+
+$(document).ready(function(){
+
+function getPlaces(){
+
+placesCards.innerHTML =' ';
+var i;
+for (i = 0 ; i < allPlaces.length ; i ++) {
+
+
+placesCards.innerHTML += ' <div class="col-md-3">' +
+			'<div class="card">' +
+          '<div class="card-header bg-primary">' + allPlaces[i].name + '</div>' +
+
+          '<div class="card-body"> description : ' +  allPlaces[i].description + '<br>amenities:'+allPlaces[i].amenities +
+            '<br> '+ allPlaces[i].address +'</div> '+
+
+          '<div class="card-footer">'+allPlaces[i].price+' per night</div></div> </div>';
+}
+
+}
+getPlaces();
+
+});
+
+
+	function placeFilter(prop, placeSelected){
+
+
+		placesCards.innerHTML =' ';
+
+		document.getElementById('placeDetails').innerHTML = ' <h3>  Place ' + prop + ":" +placeSelected + '</h3>  <br>';
+
+	    for (i = 0 ; i < allPlaces.length ; i ++) {
+	    	if (prop == 'name') {
+	    		allPlaces[i].prop = allPlaces[i].name;
+	    	} else if (prop == 'description'){
+	    		allPlaces[i].prop = allPlaces[i].description;
+	    	}
+
+			if (allPlaces[i].prop == placeSelected) {
+
+				placeCards.innerHTML += '  <div class="col-lg-3 place">' +
+					'<div class="card">' +
+		          '<div class="card-header bg-primary">' + allPlaces[i].name +'</div>' +
+
+		          '<div class="card-footer">Price: '+allPlaces[i].price+'</div></div> </div>';
+		    } //if
+	    } //for
+
+    }
+
 
 
 // var hotel = [
@@ -769,8 +823,7 @@ var breakfast = [
   }
 ]
 
-// DATE FUNCTION
-
+// DATE PICKER FUNCTION
 
 
 $( function() {
@@ -791,22 +844,7 @@ $( function() {
 
 // CHECKOUT FORM VALIDATION
 
-    function emailCheck(){
-        if($("#email").val()==""){
-            $("#email").addClass('is-invalid');
-            return false;
-        }else{
-            var regMail     =   /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
-            if(regMail.test($("#email").val()) == false){
-                $("#email").addClass('is-invalid');
-                return false;
-            }else{
-                $("#email").removeClass('is-invalid');
-                $('#next-form').collapse('show');
-            }
 
-        }
-    }
     function emailCheck(){
         if($("#email").val()==""){
             $("#email").addClass('is-invalid');
@@ -852,3 +890,28 @@ $( function() {
         });
 
     });
+
+    // DISPLAY
+
+    // $(document).ready(function(){
+    //
+    //   $("#searchBar").ready(function(){
+    //     $("#checkoutPage").hide();
+    //     $("#confirmedPage").hide();
+    //     $("#resultsPage").hide();
+    //
+    //     $("#search").click(function(){
+    //       $("#resultsPage").show();
+    //       $("#checkoutPage").hide();
+    //       $("#confirmedPage").hide();
+    //   });
+    // });
+    //   });
+// checkoutPage
+// confirmedPage
+// resultsPage
+// search
+// home
+// confirm
+// open
+// searchBar
