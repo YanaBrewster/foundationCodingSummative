@@ -18,17 +18,17 @@
     <div class="col">
       <div class="banner-search">
         <div class="banner-search-overlay">
-        <form action="index.html" method="post">
+        <!-- <form action="index.html"> -->
           <div class="row">
             <div class="col mb-2">
               <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuDestination" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Destination
                 </button>
-                <div class="dropdown-menu">
-                  <a onclick = "placeFilter('location','Auckland');" class="dropdown-item" href="#">Auckland</a>
-                  <a onclick = "placeFilter('location','Wellington');"class="dropdown-item" href="#">Wellington</a>
-                  <a onclick = "placeFilter('location','Queenstown');"class="dropdown-item" href="#">Queenstown</a>
+                <div class="dropdown-menu place">
+                  <a class="dropdown-item auckland" href="#">Auckland</a>
+                  <a class="dropdown-item wellington" href="#">Wellington</a>
+                  <a class="dropdown-item queenstown" href="#">Queenstown</a>
                 </div>
               </div>
             </div>
@@ -37,15 +37,15 @@
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuTravellers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   No. of travellers
                 </button>
-                <div class="dropdown-menu">
-                  <a onclick = "placeFilter(#);" class="dropdown-item" href="#">1</a>
-                  <a class="dropdown-item" href="#">1-2</a>
-                  <a class="dropdown-item" href="#">2-4</a>
-                  <a class="dropdown-item" href="#">1-4</a>
+                <div class="dropdown-menu travellers">
+                  <a class="dropdown-item trv1" href="#">1</a>
+                  <a class="dropdown-item trv2" href="#">2</a>
+                  <a class="dropdown-item trv3" href="#">3</a>
+                  <a class="dropdown-item trv4" href="#">4</a>
                 </div>
               </div>
             </div>
-            <div class="col mb-2">
+            <!-- <div class="col mb-2">
               <div class="dropdown mb-2">
                 <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Accommodation type
@@ -57,7 +57,7 @@
                   <a onclick = "placeFilter('type','hostel');" class="dropdown-item" href="#">Hostel</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row">
             <div class="col mb-2">
@@ -69,7 +69,7 @@
             <div class="col-12 col-lg mb-2">
               <input type="submit" name="submit" value="Search" id="search" class="btn btn-primary text-white"></div>
             </div>
-          </form>
+          <!-- </form> -->
           </div>
       </div>
     </div>
@@ -79,9 +79,10 @@
 <div id="resultsPage">
     <div id="searchResults">
       <h3 class="text-center mt-4">Search Results</h3>
+
     </div>
     <div id="placeDetails">
-
+<p>hello</p>
     </div>
 </div>
 

@@ -1,5 +1,6 @@
 // console.log("hello");
-var placesCards = document.getElementById("placeDetails")
+var placesCards = document.getElementById("placeDetails") ;
+console.log(placesCards);
 
 var allPlaces = [
   {
@@ -399,56 +400,112 @@ var allPlaces = [
   }
 ]
 
+var city, travellers, days;
+
 $(document).ready(function(){
 
-function getPlaces(){
+  $('.auckland').click(function(){
+    city = "auckland";
+    console.log(city);
+  });
+
+  $('.wellington').click(function(){
+    city = "wellington";
+    console.log(city);
+  });
+  $('.queenstown').click(function(){
+    city = "queenstown";
+    console.log(city);
+  });
+
+  $('.trv1').click(function(){
+    travellers = 1;
+    console.log(travellers);
+  });
+  $('.trv2').click(function(){
+    travellers = 2;
+    console.log(travellers);
+  });
+  $('.trv3').click(function(){
+    travellers = 3;
+    console.log(travellers);
+  });
+  $('.trv4').click(function(){
+    travellers = 4;
+    console.log(travellers);
+  });
+
+
+  function dateDiff() {
+
+    var start = $('#datePicker1').datepicker('getDate');
+    var end = $('#datePicker2').datepicker('getDate');
+    days   = (end - start)/1000/60/60/24;
+    // alert(days);
+    // document.getElementById("noDays").value = days ;
+    return days;
+  }
+  $('#search').click(function(){
+    dateDiff();
+    getPlaces(travellers, days, city);
+    // console.log("hi");
+    // console.log(days);
+  });
+//
+function getPlaces(t, d, c){
 
 placesCards.innerHTML =' ';
-var i;
+var i, j;
 for (i = 0 ; i < allPlaces.length ; i ++) {
+  for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
+
+if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
+
 
 
 placesCards.innerHTML += ' <div class="col-md-3">' +
 			'<div class="card">' +
-          '<div class="card-header bg-primary">' + allPlaces[i].name + '</div>' +
+          '<div class="card-header bg-primary">' + allPlaces[i].places[j].name + '</div>' +
 
-          '<div class="card-body"> description : ' +  allPlaces[i].description + '<br>amenities:'+allPlaces[i].amenities +
-            '<br> '+ allPlaces[i].address +'</div> '+
+          '<div class="card-body"> description : ' +  allPlaces[i].places[j].description + '<br>amenities:'+allPlaces[i].places[j].amenities +
+            '<br> '+ allPlaces[i].places[j].address +'</div> '+
 
-          '<div class="card-footer">'+allPlaces[i].price+' per night</div></div> </div>';
+          '<div class="card-footer">'+allPlaces[i].places[j].price+' per night</div></div> </div>';
 }
-
+}//loop j fin
+}//loop i
+//
 }
-getPlaces();
-
+//
+//
 });
-
-
-	function placeFilter(prop, placeSelected){
-
-
-		placesCards.innerHTML =' ';
-
-		document.getElementById('placeDetails').innerHTML = ' <h3>  Place ' + prop + ":" +placeSelected + '</h3>  <br>';
-
-	    for (i = 0 ; i < allPlaces.length ; i ++) {
-	    	if (prop == 'name') {
-	    		allPlaces[i].prop = allPlaces[i].name;
-	    	} else if (prop == 'description'){
-	    		allPlaces[i].prop = allPlaces[i].description;
-	    	}
-
-			if (allPlaces[i].prop == placeSelected) {
-
-				placeCards.innerHTML += '  <div class="col-lg-3 place">' +
-					'<div class="card">' +
-		          '<div class="card-header bg-primary">' + allPlaces[i].name +'</div>' +
-
-		          '<div class="card-footer">Price: '+allPlaces[i].price+'</div></div> </div>';
-		    } //if
-	    } //for
-
-    }
+//
+//
+// 	function placeFilter(prop, placeSelected){
+//
+//
+// 		placesCards.innerHTML =' ';
+//
+// 		document.getElementById('placeDetails').innerHTML = ' <h3>  Place ' + prop + ":" +placeSelected + '</h3>  <br>';
+//
+// 	    for (i = 0 ; i < allPlaces.length ; i ++) {
+// 	    	if (prop == 'name') {
+// 	    		allPlaces[i].prop = allPlaces[i].name;
+// 	    	} else if (prop == 'description'){
+// 	    		allPlaces[i].prop = allPlaces[i].description;
+// 	    	}
+//
+// 			if (allPlaces[i].prop == placeSelected) {
+//
+// 				placeCards.innerHTML += '  <div class="col-lg-3 place">' +
+// 					'<div class="card">' +
+// 		          '<div class="card-header bg-primary">' + allPlaces[i].name +'</div>' +
+//
+// 		          '<div class="card-footer">Price: '+allPlaces[i].price+'</div></div> </div>';
+// 		    } //if
+// 	    } //for
+//
+    // }
 
 
 
@@ -828,8 +885,8 @@ var breakfast = [
 
 $( function() {
   $( "#datePicker1" ).datepicker({
-     selectOtherMonths: true,
-     showOtherMonths: true
+     // selectOtherMonths: true,
+     // showOtherMonths: true
   });
 
 } );
@@ -837,8 +894,8 @@ $( function() {
 
 $( function() {
   $( "#datePicker2" ).datepicker({
-     selectOtherMonths: true,
-     showOtherMonths: true
+     // selectOtherMonths: true,
+     // showOtherMonths: true
   });
 } );
 
