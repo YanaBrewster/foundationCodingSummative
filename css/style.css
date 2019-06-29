@@ -7614,10 +7614,6 @@ h4 {
 p {
   font-family: 'IBM Plex Sans', sans-serif; }
 
-.hotelThumb:hover {
-  opacity: 0.5;
-  cursor: pointer; }
-
 #close {
   position: absolute;
   right: 0;
