@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -16,207 +16,193 @@
   <nav class="navbar navbar-dark bg-primary justify-content-center">
     <div class="navbar-brand mb-0"><h1>Kiwi Getaway</h1></div>
   </nav>
+
   <div id="searchBar" class="row">
     <div class="col">
       <div class="banner-search">
         <div class="banner-search-overlay">
           <!-- <form action="index.html"> -->
           <div class="row">
-            <div class="col mb-2">
-              <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuDestination" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Destination
-                </button>
-                <div class="dropdown-menu place">
-                  <a class="dropdown-item auckland" href="#">Auckland</a>
-                  <a class="dropdown-item wellington" href="#">Wellington</a>
-                  <a class="dropdown-item queenstown" href="#">Queenstown</a>
-                </div>
+            <div class="col col-8 mb-2 justify-content-center">
+              <div class="form-group">
+                <label for="FormControlSelect1 text-dark bg-white border border-primary"></label>
+                <select class="form-control place">
+                  <option>Destination</option>
+                  <option class="auckland">Auckland</option>
+                  <option class="wellington">Wellington</option>
+                  <option class="queenstown">Queenstown</option>
+                </select>
               </div>
             </div>
-            <div class="col mb-2">
-              <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuTravellers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  No. of travellers
-                </button>
-                <div class="dropdown-menu travellers">
-                  <a class="dropdown-item trv1" href="#">1</a>
-                  <a class="dropdown-item trv2" href="#">2</a>
-                  <a class="dropdown-item trv3" href="#">3</a>
-                  <a class="dropdown-item trv4" href="#">4</a>
-                </div>
+            <div class="col col-8 mb-2 justify-content-center">
+              <div class="form-group">
+                <label for="FormControlSelect2 text-dark bg-white border border-primary"></label>
+                <select class="form-control travellers">
+                  <option>No. of travellers</option>
+                  <option class="trv1">1</option>
+                  <option class="trv2">2</option>
+                  <option class="trv3">3</option>
+                  <option class="trv4">4</option>
+                </select>
               </div>
-            </div>
-            <!-- <div class="col mb-2">
-            <div class="dropdown mb-2">
-            <button class="btn btn-outline-primary dropdown-toggle text-dark bg-white" type="button" id="dropdownMenuType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Accommodation type
-          </button>
-          <div class="dropdown-menu">
-          <a onclick = "placeFilter('type','hotel');" class="dropdown-item" href="#">Hotel</a>
-          <a onclick = "placeFilter('type','motel');" class="dropdown-item" href="#">Motel</a>
-          <a onclick = "placeFilter('type','house');" class="dropdown-item" href="#">House</a>
-          <a onclick = "placeFilter('type','hostel');" class="dropdown-item" href="#">Hostel</a>
-        </div>
-      </div>
-    </div> -->
-  </div>
-  <div class="row">
-    <div class="col mb-2">
-      <input type="text" placeholder=" Check in date" id="datePicker1">
-    </div>
-    <div class="col mb-2 ">
-      <input type="text" placeholder=" Check out date"  id="datePicker2">
-    </div>
-    <div class="col-12 col-lg mb-2">
-      <input type="submit" name="submit" value="Search" id="search" class="btn btn-primary text-white"></div>
-    </div>
-    <!-- </form> -->
-  </div>
-</div>
-</div>
-</div>
-
-<!-- RESULTS PAGE -->
-<div id="resultsPage">
-  <div id="searchResults">
-    <h3 class="text-center mt-4">Search Results</h3>
-
-  </div>
-  <div id="placeDetails" class="row equal">
-
-  </div>
-</div>
-
-<!-- CHECKOUT PAGE -->
-<div id="checkoutPage">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="mb-4 mt-4 pt-4 pb-4 col-6 border border-primary rounded">
-          <h3 class="text-primary">Booking Summary</h3>
-          <span id="cost"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <h3>Meal Option</h3>
-    <div id="mealOption" class="row equal">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="breakfast" id="breakfast1" value="option1">
-        <label class="form-check-label" for="breakfast1">
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="breakfast" id="breakfast2" value="option2">
-        <label class="form-check-label" for="breakfast2">
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-6 mt-4">
-        <h3 class="mb-4">Make your booking</h3>
-        <form method="post" id="checkoutForm" onSubmit="return validation();">
-          <div class="form-group">
-            <div class="form-group">
-              <label class="font-weight-bold">Full Name</label><br>
-              <input type="text" name="name" id="fullName" class="form-control col-6" placeholder="Enter Full Name">
-            </div>
-            <label class="font-weight-bold">Email</label>
-            <div class="input-group mb-4">
-              <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
-              <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">Phone Number</label><br>
-              <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
-            </div>
-            <div class="form-group float-right">
-              <input type="submit" name="submit" value="Confirm Booking" id="confirm" class="btn btn-primary text-white">
             </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- BOOKING CONFIRMED PAGE -->
-<div id="confirmedPage">
-  <div class="container">
-    <div>
-      <div class="mb-4 mt-4 pt-4 pb-4 col-12 border border-primary rounded text-center">
-        <h3 class="text-primary">Booking Confirmed</h3>
-        <p>Thank you for booking your stay with us, we look forward to your visit.<br>You can pay for your room on arrival with eftpos or credit card.
-        </p>
-        <button type="button" id="home" class="btn btn-primary text-white">Make Another Booking</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- POP UP PAGE -->
-<div id="accomPopUp" class="overlay">
-  <div class="overlayContent rounded pr-2">
-    <div class="row h-100">
-      <div class="col-10 h-100">
-        <div id="photo">
-
+          <div class="row">
+            <div class="col mb-2 justify-content-center">
+              <input type="text" placeholder=" Check in date" id="datePicker1">
+            </div>
+            <div class="col mb-2 justify-content-center">
+              <input type="text" placeholder=" Check out date"  id="datePicker2">
+            </div>
+            <div class="col-12 col-lg mb-2">
+              <input type="submit" name="submit" value="Search" id="search" class="btn btn-primary text-white"></div>
+            </div>
+            <!-- </form> -->
+          </div>
         </div>
       </div>
-      <div class="col-10 col-lg-5">
-        <h3 id="name" class="text-left mt-4"></h3>
-        <div id="stars">
+    </div>
 
+    <!-- RESULTS PAGE -->
+    <div id="resultsPage">
+      <div id="searchResults">
+        <h3 class="text-center mt-4 mt-b">Search Results</h3>
+
+      </div>
+      <div id="placeDetails" class="row equal">
+
+      </div>
+    </div>
+
+    <!-- CHECKOUT PAGE -->
+    <div id="checkoutPage">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mb-4 mt-4 pt-4 pb-4 col-6 border border-primary rounded">
+              <h3 class="text-primary">Booking Summary</h3>
+              <span id="cost"></span>
+            </div>
+          </div>
         </div>
-        <p id="description"></p>
-        <p id="amenities"></p>
       </div>
-      <div class="col-10 col-lg-5">
-        <p id="location"></p>
-        <p id="address"></p>
-        <p id="nearby"></p>
-        <h3 id="price"></h3>
+      <div class="container">
+        <h3>Meal Option</h3>
+        <div id="mealOption" class="row equal">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="breakfast" id="breakfast1" value="option1">
+            <label class="form-check-label" for="breakfast1">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="breakfast" id="breakfast2" value="option2">
+            <label class="form-check-label" for="breakfast2">
+            </label>
+          </div>
+        </div>
       </div>
-      <div class="col-10 col-lg-10">
-        <button type="button" id="reserve" class="btn btn-primary text-white">Reserve</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mt-4">
+            <h3 class="mb-4">Make your booking</h3>
+            <form method="post" id="checkoutForm" onSubmit="return validation();">
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="font-weight-bold">Full Name</label><br>
+                  <input type="text" name="name" id="fullName" class="form-control col-6" placeholder="Enter Full Name">
+                </div>
+                <label class="font-weight-bold">Email</label>
+                <div class="input-group mb-4">
+                  <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
+                  <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
+                </div>
+                <div class="form-group">
+                  <label class="font-weight-bold">Phone Number</label><br>
+                  <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
+                </div>
+                <div class="form-group float-right">
+                  <input type="submit" name="submit" value="Confirm Booking" id="confirm" class="btn btn-primary text-white">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="close">
-      <i class="fas fa-times fa-2x"></i>
+
+
+    <!-- BOOKING CONFIRMED PAGE -->
+    <div id="confirmedPage">
+      <div class="container">
+        <div>
+          <div class="mb-4 mt-4 pt-4 pb-4 col-12 border border-primary rounded text-center">
+            <h3 class="text-primary">Booking Confirmed</h3>
+            <p>Thank you for booking your stay with us, we look forward to your visit.<br>You can pay for your room on arrival with eftpos or credit card.
+            </p>
+            <button type="button" id="home" class="btn btn-primary text-white">Make Another Booking</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- SLIDESHOW -->
-<div id="slideshow">
-  <div class="owl-carousel owl-theme">
-    <div class="item"><img src="css/images/aucklandcity.jpg" alt="Auckland City landscape"></div>
-      <div class="item"><img src="css/images/Skywalk-Auckland.jpg" alt="woman on Skywalk Auckland"></div>
-      <div class="item"><img src="css/images/wellingtoncity.jpg" alt="Wellngton City landscape"></div>
-      <div class="item"><img src="css/images/wellingtonhobbiton.jpg" alt="Hobbiton in Wellington"></div>
-      <div class="item"><img src="css/images/queenstown.jpg" alt="Queenstown landscape"></div>
-      <div class="item"><img src="css/images/queenstownski.jpg" alt="Skiing in Queenstown"></div>
-  </div>
-</div>
 
-<!-- FOOTER -->
+    <!-- POP UP PAGE -->
+    <div id="accomPopUp" class="overlay">
+      <div class="overlayContent rounded pr-2">
+        <div class="row h-100">
+          <div class="col-10 h-100">
+            <div id="photo">
 
-<footer class="navbar bg-secondary justify-content-center">
-  <div class="navbar-brand text-white"><p>Supported by Tourism New Zealand</p></div>
-</footer>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5">
+            <h3 id="name" class="text-left mt-4"></h3>
+            <div id="stars">
 
-<script src="js/jquery-3.4.1.min.js"> </script>
-<script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.js"> </script>
-<script type="text/javascript" src="js/script.js"></script>
+            </div>
+            <p id="description"></p>
+            <p id="amenities"></p>
+          </div>
+          <div class="col-10 col-lg-5">
+            <p id="location"></p>
+            <p id="address"></p>
+            <p id="nearby"></p>
+            <h3 id="price"></h3>
+          </div>
+          <div class="col-10 col-lg-10">
+            <button type="button" id="reserve" class="btn btn-primary text-white">Reserve</button>
+          </div>
+        </div>
+        <div id="close">
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+      </div>
+    </div>
 
-</body>
-</html>
+    <!-- SLIDESHOW -->
+    <div id="slideshow">
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="css/images/aucklandcity.jpg" alt="Auckland City landscape"></div>
+        <div class="item"><img src="css/images/Skywalk-Auckland.jpg" alt="woman on Skywalk Auckland"></div>
+        <div class="item"><img src="css/images/wellingtoncity.jpg" alt="Wellngton City landscape"></div>
+        <div class="item"><img src="css/images/wellingtonhobbiton.jpg" alt="Hobbiton in Wellington"></div>
+        <div class="item"><img src="css/images/queenstown.jpg" alt="Queenstown landscape"></div>
+        <div class="item"><img src="css/images/queenstownski.jpg" alt="Skiing in Queenstown"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="navbar bg-secondary justify-content-center">
+      <div class="navbar-brand text-white"><p>Supported by Tourism New Zealand</p></div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"> </script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"> </script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+  </html>

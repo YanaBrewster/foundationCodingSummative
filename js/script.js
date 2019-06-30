@@ -449,6 +449,16 @@ $(document).ready(function(){
     getPlaces(travellers, days, city);
   });
 
+  // CALCULATE COSTS AND DISPLAY
+
+  // $("#cost").ready(function(){
+  //
+  //   var total = allPlaces[i].place[id].price * days.val(); {
+  //     // console.log(total);
+  //     totalCost.innerHTML += "<p>The total cost for your stay is <b>$" + total + "</b> for " + days + " nights.</p>"
+  //   }
+  // });
+
   function getPlaces(t, d, c){
 
     placesCards.innerHTML =" ";
@@ -575,30 +585,31 @@ $( function() {
   });
 } );
 
-$("#datePicker1").datepicker({
-  dateFormat: "dd-mm-yy",
-  changeMonth: true,
-  minDate: new Date(),
-  maxDate: "+1y",
-  onSelect: function(date){
+// $("#datePicker1").datepicker({
+//   dateFormat: "dd-mm-yy",
+//   changeMonth: true,
+//   minDate: new Date(),
+//   maxDate: "+1M",
+//   onSelect: function(date){
+//
+//     var selectedDate = new Date(date);
+//     var msecsInADay = 86400000;
+//     var stDate = new Date(selectedDate.getTime() + msecsInADay);
+//
+//
+//     $("#datePicker2").datepicker( "option", "minDate", stDate );
+//     var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
+//
+//     $("#datePicker2").datepicker( "option", "maxDate", enDate );
+//
+//   }
+// });
 
-    var selectedDate = new Date(date);
-    var msecsInADay = 86400000;
-    var stDate = new Date(selectedDate.getTime() + msecsInADay);
-
-
-    $("#datePicker2").datepicker( "option", "minDate", stDate );
-    var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
-
-    $("#datePicker2").datepicker( "option", "maxDate", enDate );
-
-  }
-});
-
-$("#datePicker2").datepicker({
-  dateFormat: "dd-mm-yy",
-  changeMonth: true
-});
+// $("#datePicker2").datepicker({
+//   dateFormat: "dd-mm-yy",
+//   changeMonth: true,
+//   // minDate: 0
+// });
 
 // CHECKOUT FORM VALIDATION
 
@@ -708,12 +719,3 @@ $(".owl-carousel").owlCarousel({
   autoHeight:false,
   animateOut: "fadeOut"
 });
-
-// CALCULATE COSTS AND DISPLAY
-//
-//   var a, b;
-// $("#cost").ready(function(dateDiff){
-//   var total = days * allPlaces[a].places[b].price; {
-//     totalCost.innerHTML += "<p>The total cost for your stay is <b>$" + total + "</b> for " + days + " nights.</p>"
-//   }
-// });
