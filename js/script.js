@@ -12,7 +12,7 @@ var allPlaces = [
         id: 1,
         name: "QT Hotel Wellington",
         stars: "4stars.png",
-        description: "Opposite the Museum of New Zealand Te Papa Tongarewa," + " this quirky boutique hotel is 6.1 km from Wellington International Airport." + " This smoke-free hotel features a restaurant, an indoor pool, and 2 bars/lounges. WiFi in public areas is free. " + " Additionally, a fitness center,  a coffee shop/café, and a spa tub are onsite." + " All 65 rooms feature thoughtful touches like espresso makers and pillow menus," + " plus free WiFi and LCD TVs with cable channels." + " Other amenities available to guests include 24-hour room service, refrigerators, and minibars.",
+        description: "Opposite the Museum of New Zealand Te Papa Tongarewa," + " this quirky boutique hotel is 6.1 km from Wellington International Airport." + " This smoke-free hotel features a restaurant, an indoor pool, and 2 bars/lounges. WiFi in public areas is free.",
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -44,7 +44,7 @@ var allPlaces = [
         id: 2,
         name: "Copthorne Hotel Wellington",
         stars: "4stars.png",
-        description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
+        description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." ,
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -76,7 +76,7 @@ var allPlaces = [
         id: 4,
         name: "Copthorne Auckland",
         stars: "4stars.png",
-        description: "Across the street from Wellington Harbour," + " this refined hotel is a 6-minute walk from the Museum of New Zealand Te Papa Tongarewa and 3 km from Wellington Botanic Garden." + " Refined rooms offer balconies, free Wi-Fi, flat-screen TVs and minibars, plus tea and coffeemaking facilities." + " Upgraded rooms add harbour views. Suites include dining tables and separate living areas." + " Room service is available. There's a bar/restaurant offering panoramic views of the city. " + "Other amenities include meeting and event space. " + "Breakfast (surcharge) and parking are available.",
+        description: "A restaurant, a bar/lounge, and self parking are available at this smoke-free hotel. WiFi in public areas is free. Other amenities include 24-hour room service, concierge services, and dry cleaning.",
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -108,7 +108,7 @@ var allPlaces = [
         id: 5,
         name: "Rydges Auckland",
         stars: "4stars.png",
-        description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
+        description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café,",
         sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
         sleeps: {
           minLength: 1,
@@ -141,7 +141,7 @@ var allPlaces = [
         id: 7,
         name: "Heartland Hotel Queenstown",
         stars: "4stars.png",
-        description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café," + " a 24-hour business center, and a conference center are onsite." + " All 267 rooms provide conveniences like refrigerators and coffee makers," + " plus free WiFi and 24-hour room service." + " Guests will also find LCD TVs, minibars, and premium bedding.",
+        description: "Along with a restaurant, this smoke-free hotel has a bar/lounge and a coffee shop/café. Free WiFi in public areas and free self parking are also provided",
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -173,7 +173,7 @@ var allPlaces = [
         id: 8,
         name: "Rydges Lakeland Resort Queenstown",
         stars: "3stars.png",
-        description: "Along with a restaurant, this smoke-free hotel has an outdoor pool and a bar/lounge." + " WiFi in public areas is free. Other amenities include a sauna, a rooftop terrace, and self parking." + " All 165 rooms provide conveniences like refrigerators and coffee makers, plus 24-hour room service and plasma TVs." + " Free newspapers, in-room massages, and hair dryers are among the other amenities that guests will find.",
+        description: "Along with a restaurant, this smoke-free hotel has an outdoor pool and a bar/lounge." + " WiFi in public areas is free. Other amenities include a sauna, a rooftop terrace, and self parking.",
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -242,7 +242,7 @@ var allPlaces = [
         id: 11,
         name: "Capital View Motor Inn",
         stars: "4stars.png",
-        description: "Just 5 minutes' walk from Cuba Street's bars and restaurants," + " Capital View Motor Inn offers self-contained apartments with views of the harbor and Wellington city. " + "Guests enjoy free onsite parking and unlimited free WiFi." + " All accommodation offers a kitchen with a microwave, a hotplate and a refrigerator." + " Each apartment is equipped with heating, electric blankets and flat-screen satellite TV." + " Wellington Capital View Motor Inn is 15 minutes' from Lambton Quay. " + "It is a 5-minute drive from Basin Reserve Stadium and an 8-minute drive from Te Papa Museum.",
+        description: "Just 5 minutes' walk from Cuba Street's bars and restaurants," + " Capital View Motor Inn offers self-contained apartments with views of the harbor and Wellington city. " + "Guests enjoy free onsite parking and unlimited free WiFi." ,
         sleeps: {
           minLength: 3,
           maxLength: 10,
@@ -276,7 +276,7 @@ var allPlaces = [
         id: 19,
         name: "The Balcony Suite",
         stars: "4stars.png",
-        description: "The Balcony Suite is a true home away from home." + " It comes equipped with two bedrooms: one with a queen sized four poster bed, the other with a queen sized bed and a single bed. " + "There is a separate modern bathroom that also contains laundry facilities. " + "The Balcony Suite has a fully equipped modern kitchen with dishwasher, oven, hob, full sized fridge and microwave. " + "There is a separate living/dining area and a further conservatory in which to relax and take in the views." + " The conservatory opens out to a large deck overlooking the harbour." + " The Westpac stadium, the central city and the hill suburbs beyond." + " A cot and highchair are available on request. Sumptuous linen and quality towels are provided.",
+        description: "The Balcony Suite is a true home away from home." + " It comes equipped with two bedrooms: one with a queen sized four poster bed, the other with a queen sized bed and a single bed. " + "There is a separate modern bathroom that also contains laundry facilities.",
         sleeps: {
           minLength: 2,
           maxLength: 15,
@@ -308,7 +308,7 @@ var allPlaces = [
         id: 20,
         name: "Stunning contemporary city fringe town house",
         stars: "5stars.png",
-        description: "Close to town in a sunny suburb with off street parking and close to bus stop." + " Cable car near by as is the university and Zealandia. " + "Easy access to motorway and ferry." + " Spoilt for choice with the number of native bush reserves and Botanic Garden near by." + " Iconic Kelburn village 10 minutes walk away with restaurants and bars." + " Quiet, established neighbourhood." + " Living room offers high stud, with open fire and heat pump" + " - open living with dining table and modern kitchen.",
+        description: "Close to town in a sunny suburb with off street parking and close to bus stop." + " Cable car near by as is the university and Zealandia. " + "Easy access to motorway and ferry.",
         sleeps: {
           minLength: 2,
           maxLength: 15,
@@ -341,7 +341,7 @@ var allPlaces = [
         id: 28,
         name: "YHA Wellington Backpacker Hostel",
         stars: "4stars.png",
-        description: "Set in the inner-city Te Aro district," + " this modern youth hostel is a 5-minute walk from the Museum of New Zealand Te Papa Tongarewa and a 14-minute walk from the National War Memorial." + " Bright rooms offer free Wi-Fi; most provide en suite bathrooms. " + "Mixed and single-sex dorms add bunk beds and sleep up to 8 guests. " + "Amenities include 2 communal kitchens and dining areas," + " as well as private lockers, a pool table, and a TV lounge with a projector and movie rentals. There's also an espresso bar.",
+        description: "Set in the inner-city Te Aro district," + " this modern youth hostel is a 5-minute walk from the Museum of New Zealand Te Papa Tongarewa and a 14-minute walk from the National War Memorial." + " Bright rooms offer free Wi-Fi; most provide en suite bathrooms. ",
         sleeps: {
           minLength: 1,
           maxLength: 10,
@@ -374,7 +374,7 @@ var allPlaces = [
         id: 29,
         name: "Hotel Waterloo & Backpackers",
         stars: "4stars.png",
-        description: "Hotel Waterloo & Backpackers offers budget accommodation in the centre of Wellington. " + "It features a 24-hour guest kitchen, self-service laundry facilities and a games room with pool tables." + " Guests receive 1GB of free WiFi per 24 hours. " + "Formerly the historic Hotel Waterloo, which hosted Queen Elizabeth II’s entourage on her 1953 Coronation Tour," + " the hostel features elegant staircases, high ceilings and a café in the old ballroom." + " Wellington Railway Station is only 200 m from Wellington Hotel Waterloo & Backpackers." + " It is an 8-minute walk to TSB Arena and a 12-minute walk to Westpac Stadium." + " Private and shared rooms are available. " + "All rooms include heating and bed linen is provided. " + "Each private room has a work desk and cable TV. Secure lockers are provided for all guests.",
+        description: "Hotel Waterloo & Backpackers offers budget accommodation in the centre of Wellington. " + "It features a 24-hour guest kitchen, self-service laundry facilities and a games room with pool tables." + " Guests receive 1GB of free WiFi per 24 hours. ",
         sleeps: {
           minLength: 1,
           maxLength: 10,
@@ -474,10 +474,11 @@ $(document).ready(function(){
 
               // SUCCESSFUL VALIDATION
 
-              placesCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-3 mb-3 mt-4\">" +
+              placesCards.innerHTML += "<div class=\"col-12 col-lg-6 col-sm-12 col-md-6 mb-2 mt-4\">" +
               "<div class=\"border-primary card h-100\">" +
               "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
-              "<img src=\"css/images/" + allPlaces[i].places[j].thumbnail + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block text-truncate\">" +  allPlaces[i].places[j].description + "</div><div class=\"text-secondary mt-2 mb-2 text-center\"><br><h4>$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-4\"><a class=\" btn btn-primary text-white show-more\" id ='getQuote" +i.toString()+j.toString()+"'>Get Quote</a></div></div>";
+              "<img src=\"css/images/" + allPlaces[i].places[j].thumbnail + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"'>Reserve</a></div></div>";
+              // "<br><h4>Nearby</h4><ul><li class=\"list-inline-item\">" +  allPlaces[i].places[j].nearby + "</li><ul></div><div class=\"pt-2 d-block\"><div class=\"text-secondary mt-2 mb-2 text-center\">
 
               // CALCULATE COSTS AND DISPLAY IN JS
               var total = d * allPlaces[i].places[j].price ;

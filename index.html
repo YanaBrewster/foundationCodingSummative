@@ -22,20 +22,21 @@
       <div class="banner-search">
         <div class="banner-search-overlay">
           <div class="row">
-            <div class="col col-8 mb-2 justify-content-center">
+            <div class="col col-lg-8 col-sm-12 justify-content-center">
               <div class="form-group">
-                <label for="FormControlSelect1 text-dark bg-white border border-primary"></label>
-                <select class="form-control place" id="city">
-                  <option>Destination</option>
-                  <option class="auckland">Auckland</option>
-                  <option class="wellington">Wellington</option>
-                  <option class="queenstown">Queenstown</option>
-                </select>
+                <div class=" text-dark bg-white border border-primary rounded">
+                  <select class="form-control place" id="city">
+                    <option>Destination</option>
+                    <option class="auckland">Auckland</option>
+                    <option class="wellington">Wellington</option>
+                    <option class="queenstown">Queenstown</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="col col-8 mb-2 justify-content-center">
+            <div class="col col-lg-8 col-sm-12 justify-content-center">
               <div class="form-group">
-                <label for="FormControlSelect2 text-dark bg-white border border-primary"></label>
+                <div class=" text-dark bg-white border border-primary rounded">
                 <select class="form-control travellers" id="travellers">
                   <option value="travellers">No. of travellers</option>
                   <option value="1" class="trv1">1</option>
@@ -45,12 +46,13 @@
                 </select>
               </div>
             </div>
+            </div>
           </div>
           <div class="row">
-            <div class="col mb-2 justify-content-center">
+            <div class="col mt-2 mb-2 justify-content-center">
               <input type="text" placeholder=" Check in date" id="datePicker1">
             </div>
-            <div class="col mb-2 justify-content-center">
+            <div class="col mt-2 mb-2 justify-content-center">
               <input type="text" placeholder=" Check out date"  id="datePicker2">
             </div>
             <div class="col-12 col-lg mb-2">
@@ -108,16 +110,16 @@
               <div class="form-group">
                 <div class="form-group">
                   <label class="font-weight-bold">Full Name</label><br>
-                  <input type="text" name="name" id="fullName" class="form-control col-6" placeholder="Enter Full Name">
+                  <input type="text" name="name" id="fullName" class="form-control col-6 col-sm-12" placeholder="Enter Full Name">
                 </div>
                 <label class="font-weight-bold">Email</label>
                 <div class="input-group mb-4">
-                  <input type="email" name="email" id="email" class="form-control col-6" placeholder="Enter Email Address">
+                  <input type="email" name="email" id="email" class="form-control col-6 col-sm-12" placeholder="Enter Email Address">
                   <div class="input-group-append"><button type="button" class="btn btn-primary" onClick="return emailCheck();"><i class="fa fa-envelope text-white"></i></button></div>
                 </div>
                 <div class="form-group">
                   <label class="font-weight-bold">Phone Number</label><br>
-                  <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
+                  <input type="text" name="phone" id="phone" class="form-control col-6 col-sm-12" placeholder="(000)-(0000000)">
                 </div>
                 <div class="form-group float-right">
                   <input type="submit" name="submit" value="Confirm Booking"  class="btn btn-primary text-white">
