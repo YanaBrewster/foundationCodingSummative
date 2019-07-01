@@ -265,7 +265,134 @@ var allPlaces = [
         price: 90,
         thumbnail: "capitalViewMotorInnExterior-Wellington.jpg",
         photo: "capitalViewMotorInnRoom-Wellington.jpg"
+      },
+
+      {
+        id: 13,
+        name: "Greenlane Motel",
+        stars: "3stars.png",
+        description: "Along with a restaurant, this motel has a coffee shop/café and laundry facilities." + " Free continental breakfast, free WiFi in public areas, and free self parking are also provided.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Free Breakfast", "Laundry", "Housekeeping" ],
+        location: "Auckland",
+        address: "453 Great South Road Penrose, Auckland",
+        nearby: [
+          {
+            place: "Alexandra Park",
+            walk: 15
+          },
+          {
+            place: "Mt. Smart Stadium",
+            walk: 15
+          }
+        ],
+        price: 90,
+        thumbnail: "GreenLaneMotelExterior-Auckland.jpg",
+        photo: "GreenLaneMotelRoom-Auckland.jpg"
+      },
+
+      {
+        id: 14,
+        name: "Tudor Court Motor Lodge",
+        stars: "4stars.png",
+        description: "Laundry facilities, express check-out, " + "and multilingual staff are available at this smoke-free motel." + " Free WiFi in public areas and free self parking are also provided.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Free Breakfast", "Laundry", "Housekeeping" ],
+        location: "Auckland",
+        address: "108 Great South Road, Epsom, Auckland",
+        nearby: [
+          {
+            place: "Alexandra Park",
+            walk: 15
+          },
+          {
+            place: "ASB Showgrounds",
+            walk: 15
+          },
+          {
+            place: "Mt. Eden Domain",
+            walk: 25
+          }
+        ],
+        price: 90,
+        thumbnail: "TudorCourtMotorLodgeExterior-Auckland.jpg",
+        photo: "TudorCourtMotorLodgeRoom-Auckland.jpg"
+      },
+      {
+        id: 16,
+        name: "Autoline Motel",
+        stars: "4stars.png",
+        description: "A perfect getaway for skiers, Autoline Motel offers conveniences such as laundry facilities," + " tour/ticket assistance, and free self parking. All 13 rooms provide conveniences like kitchenettes and coffee makers.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Air Conditioning", "Laundry", "Housekeeping" ],
+        location: "Queenstown",
+        address: "2-4 Dublin Street, Queenstown",
+        nearby: [
+          {
+            place: "Queenstown Beach",
+            walk: 7
+          },
+          {
+            place: "Queenstown Mall",
+            walk: 9
+          },
+          {
+            place: "Queenstown Hill",
+            walk: 11
+          }
+        ],
+        price: 90,
+        thumbnail: "",
+        photo: ""
+      },
+      {
+        id: 17,
+        name: "Amber Lodge Motel",
+        stars: "3stars.png",
+        description: "A perfect getaway for skiers, Amber Lodge Motel offers conveniences such as laundry facilities," + " tour/ticket assistance, and free self parking." + " All 12 rooms feature kitchens with refrigerators and microwaves, plus free WiFi and TVs.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Laundry", "Housekeeping" ],
+        location: "Queenstown",
+        address: "1 Gorge Road, Queenstown",
+        nearby: [
+          {
+            place: "Skycity Queenstown Casino",
+            walk: 4
+          },
+          {
+            place: "Queenstown Mall",
+            walk: 4
+          },
+          {
+            place: "Fear Factory Queenstown",
+            walk: 5
+          }
+        ],
+        price: 90,
+        thumbnail: "",
+        photo: ""
       }
+
 
     ]
   },
@@ -331,6 +458,114 @@ var allPlaces = [
         price: 240,
         thumbnail: "cityfringetownhouseExterior-Wellington.jpg",
         photo: "cityfringetownhouseRoom-Wellington.jpg"
+      },
+      {
+        id: 22,
+        name: "Juan's Place",
+        stars: "5stars.png",
+        description: "The room can fit two people comfortably and there is a Sofa Bed in the living room for a 3rd person. " + "The guests will have their own private bathroom. The apartment is on the 5th floor and there is access to an indoor pool and tennis court." + " The apartment is conveniently located right in the city centre.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free-Wifi", "Kitchen", "Lift", "Cable TV"],
+        location: "Auckland",
+        address: "Queen St, Auckland",
+        nearby: [
+          {
+            place: "Britomart Train Station",
+            walk: 1
+          },
+          {
+            place: "The Ferry Station",
+            walk: 7
+          },
+          {
+            place: "Sky Tower",
+            walk: 15
+          }
+        ],
+        price: 240,
+        thumbnail: "JuanPlaceExterior-Auckland.jpg",
+        photo: "JuanPlaceRoom-Auckland.jpg"
+      },
+      {
+        id: 23,
+        name: "A double room and some luxurities in CBD area",
+        stars: "5stars.png",
+        description: "You will have our extra double room for yourself," + " in the central Auckland in a modern apartment building with a gym, a steam room, and a pool. " + "You'll have a beautiful view over the city from our balcony! You are welcome to use the kitchen.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free-Wifi", "Gym", "Kitchen", "Lift"],
+        location: "Auckland",
+        address: "Auckland CBD",
+        nearby: [
+          {
+            place: "Downtown Auckland",
+            walk: 10
+          }
+        ],
+        price: 240,
+        thumbnail: "HostedbyEveliinaExterior-Auckland.jpg",
+        photo: "HostedbyEveliinaRoom-Auckland.jpg"
+      },
+      {
+        id: 25,
+        name: "Modern private room, stunning views from your room",
+        stars: "5stars.png",
+        description: "Wake up and look out to the stunning views of Lake Wakatipu" + " and the jagged peaks of The Remarkables from your bed! " + "Our guestroom is a private room in our warm and modern home.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free-Wifi", "Air Conditioning", "Free Parking", "Iron"],
+        location: "Queenstown",
+        address: "Queenstown, Otago, New Zealand",
+        nearby: [
+          {
+            place: "Queenstown CBD",
+            walk: 25
+          },
+          {
+            place: "Bus stop",
+            walk: 10
+          }
+        ],
+        price: 240,
+        thumbnail: "",
+        photo: ""
+      },
+      {
+        id: 26,
+        name: "Queenstown home with a view",
+        stars: "4stars.png",
+        description: "Apartment is located in the heart of town surrounded by restaurants and shops opposite the lake. You can view the lake from the apartment.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free-Wifi", "Kitchen", "Iron", "Shampoo"],
+        location: "Queenstown",
+        address: "Queenstown, Otago, New Zealand",
+        nearby: [
+          {
+            place: "Queenstown Lake",
+            walk: 1
+          }
+        ],
+        price: 240,
+        thumbnail: "",
+        photo: ""
       }
     ]
   },
@@ -397,6 +632,146 @@ var allPlaces = [
         price: 30,
         thumbnail: "HotelWaterlooBackpackersExterior-Wellington.jpg",
         photo: "HotelWaterlooBackpackersRoom-Wellington.jpg"
+      },
+      {
+        id: 31,
+        name: "Haka Lodge Auckland Hostel",
+        stars: "4stars.png",
+        description: "This smoke-free hostel features laundry facilities," + " tour/ticket assistance, and free WiFi in public areas. Rooms offer free WiFi and showers.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Kitchen", "Laundry"],
+        location: "Auckland",
+        address: "373 Karangahape Rd, Auckland",
+        nearby: [
+          {
+            place: "Auckland Town Hall",
+            walk: 12
+          },
+          {
+            place: "Sky Tower",
+            walk: 15
+          },
+        ],
+        price: 30,
+        thumbnail: "HakaLodgeAucklandExterior.jpg",
+        photo: "HakaLodgeAucklandRoom.jpg"
+      },
+      {
+        id: 32,
+        name: "YMCA Hostel Auckland",
+        stars: "3stars.png",
+        description: "Along with a fitness center, " + " this smoke-free hostel has WiFi in public areas and self parking. " + "Other amenities include laundry facilities, a 24-hour front desk, and tour/ticket assistance.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Kitchen", "Gym", "Free Parking", "Breakfast Available"],
+        location: "Auckland",
+        address: "20 Pitt Street, Auckland",
+        nearby: [
+          {
+            place: "Auckland Town Hall",
+            walk: 8
+          },
+          {
+            place: "Sky Tower",
+            walk: 10
+          },
+        ],
+        price: 30,
+        thumbnail: "ymcaExterior-Auckland.jpg",
+        photo: "ymcaRoom-Auckland.jpg"
+      },
+      {
+        id: 33,
+        name: "Queen Street Backpackers",
+        stars: "3stars.png",
+        description: "Along with a bar/lounge," + " this smoke-free hostel has coffee/tea in a common area and a microwave in a common area. " + "Free continental breakfast and free WiFi in public areas are also provided.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Kitchen", "Bar", "Free Breakfast"],
+        location: "Auckland",
+        address: "4 Fort Street, Auckland",
+        nearby: [
+          {
+            place: "Queen Street Shopping District",
+            walk: 1
+          },
+          {
+            place: "SkyCity Casino",
+            walk: 8
+          },
+        ],
+        price: 30,
+        thumbnail: "QueenStreetBackpackersExterior - Auckland.jpg",
+        photo: "QueenStreetBackpackersRoom- Auckland.jpg"
+      },
+      {
+        id: 34,
+        name: "Nomads Queenstown Backpackers",
+        stars: "4stars.png",
+        description: "Cozy up to a roaring lobby fireplace at Nomads Queenstown Backpackers after an exciting day on the slopes. " + "Rooms offer WiFi and hair dryers.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Air Conditioning", "Spa", "24-hour front desk", "Laundry"],
+        location: "Queenstown",
+        address: "5-11 Church Street, Queenstown",
+        nearby: [
+          {
+            place: "Queenstown Mall",
+            walk: 2
+          },
+          {
+            place: "Skycity Queenstown Casino",
+            walk: 4
+          },
+        ],
+        price: 30,
+        thumbnail: "",
+        photo: ""
+      },
+      {
+        id: 35,
+        name: "YHA Queenstown Central Hostel",
+        stars: "4stars.png",
+        description: "Laundry facilities, a library, " + "and tour/ticket assistance are available at this hostel." + " WiFi in public areas is free. Other amenities include a vending machine." + " All 30 rooms offer free WiFi, coffee makers, and TVs.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Laundry", "Housekeeping"],
+        location: "Queenstown",
+        address: "48 Shotover Street, Queenstown",
+        nearby: [
+          {
+            place: "Fear Factory Queenstown",
+            walk: 1
+          },
+          {
+            place: "Skycity Queenstown Casino",
+            walk: 2
+          },
+        ],
+        price: 30,
+        thumbnail: "",
+        photo: ""
       }
     ]
   }
@@ -463,9 +838,8 @@ $(document).ready(function(){
   function getPlaces(t, d, c){
 
     placesCards.innerHTML =" ";
-    var i, j;
-    for (i = 0 ; i < allPlaces.length ; i ++) {
-      for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
+    for (var i = 0 ; i < allPlaces.length ; i ++) {
+      for (var j = 0 ; j < allPlaces[i].places.length ; j ++) {
 
         if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
           if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
@@ -473,22 +847,18 @@ $(document).ready(function(){
 
 
               // SUCCESSFUL VALIDATION
+              var total = d * allPlaces[i].places[j].price ;
 
               placesCards.innerHTML += "<div class=\"col-12 col-lg-6 col-sm-12 col-md-6 mb-2 mt-4\">" +
               "<div class=\"border-primary card h-100\">" +
               "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
-              "<img src=\"css/images/" + allPlaces[i].places[j].thumbnail + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"'>Reserve</a></div></div>";
+              "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
               // "<br><h4>Nearby</h4><ul><li class=\"list-inline-item\">" +  allPlaces[i].places[j].nearby + "</li><ul></div><div class=\"pt-2 d-block\"><div class=\"text-secondary mt-2 mb-2 text-center\">
-
-              // CALCULATE COSTS AND DISPLAY IN JS
-              var total = d * allPlaces[i].places[j].price ;
-
-              document.getElementById('cost').innerHTML = "<p>The total cost for your stay is <b>$" + total + "</b> for " + d + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>"
-
             }
           } else {
             // FAILED VALIDATION IN JQUERY
-            $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
+            placesCards.innerHTML = "<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>"
+            // $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
           }
         }
       }//loop j fin
@@ -496,25 +866,31 @@ $(document).ready(function(){
   }
 });
 
-function getQuote(t,d,c){
+// CALCULATE COSTS AND DISPLAY IN JS
 
-  var i, j;
-  for (i = 0 ; i < allPlaces.length ; i ++) {
-    for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
-      if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
-        if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
-          if ( c == allPlaces[i].places[j].location) {
-
-            var total = d * allPlaces[i].places[j].price ;
-
-          }
-        }
-      }
-
-    }
-  }
-
+function calcCost (totalCost, days) {
+    document.getElementById('cost').innerHTML = "<p>The total cost for your stay is <b>$" + totalCost + "</b> for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
 }
+
+// function getQuote(t,d,c){
+//
+//   var i, j;
+//   for (i = 0 ; i < allPlaces.length ; i ++) {
+//     for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
+//       if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
+//         if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
+//           if ( c == allPlaces[i].places[j].location) {
+//
+//             var total = d * allPlaces[i].places[j].price ;
+//
+//           }
+//         }
+//       }
+//
+//     }
+//   }
+//
+// }
 
 
 // MEAL DATA/OBJECT IN JS
