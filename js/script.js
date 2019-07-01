@@ -2,6 +2,8 @@ var placesCards = document.getElementById("placeDetails") ;
 var breakfastCards = document.getElementById("mealOption") ;
 var totalCost = document.getElementById("cost") ;
 
+// DATABASE/OBJECT
+
 var allPlaces = [
   {
     type: "hotel",
@@ -400,7 +402,7 @@ var allPlaces = [
   }
 ]
 
-// FILTER SEARCH BAR
+// FILTER SEARCH BAR IN JQUERY
 
 var city, travellers, days;
 
@@ -442,22 +444,21 @@ $(document).ready(function(){
     var start = $("#datePicker1").datepicker("getDate");
     var end = $("#datePicker2").datepicker("getDate");
     days  = (end - start)/1000/60/60/24;
+    console.log(days);
     return days;
   }
+
   $("#search").click(function(){
+    var city = document.getElementById("city").value ;
+    var travellers = document.getElementById("travellers").value ;
+
     dateDiff();
+
     getPlaces(travellers, days, city);
+
   });
 
-  // CALCULATE COSTS AND DISPLAY
-
-  // $("#cost").ready(function(){
-  //
-  //   var total = allPlaces[i].place[id].price * days.val(); {
-  //     // console.log(total);
-  //     totalCost.innerHTML += "<p>The total cost for your stay is <b>$" + total + "</b> for " + days + " nights.</p>"
-  //   }
-  // });
+  // FILTER/VALIDATION FUNCTION IN JS
 
   function getPlaces(t, d, c){
 
@@ -468,79 +469,54 @@ $(document).ready(function(){
 
         if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
           if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
-            // if ( c == allPlaces[i].places[j].location) {
+            if ( c == allPlaces[i].places[j].location) {
 
-            // SUCCESSFUL VALIDATION
-            placesCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-3 mb-3 mt-4\">" +
-            "<div class=\"border-primary card h-100\">" +
-            "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
-            "<img src=\"css/images/" + allPlaces[i].places[j].thumbnail + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block text-truncate\">" +  allPlaces[i].places[j].description + "</div><div class=\"text-secondary mt-2 mb-2 text-center\"><br><h4>$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-4\"><a class=\"showMore btn btn-primary text-white\">View More</a></div></div>";
+
+              // SUCCESSFUL VALIDATION
+
+              placesCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-3 mb-3 mt-4\">" +
+              "<div class=\"border-primary card h-100\">" +
+              "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
+              "<img src=\"css/images/" + allPlaces[i].places[j].thumbnail + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block text-truncate\">" +  allPlaces[i].places[j].description + "</div><div class=\"text-secondary mt-2 mb-2 text-center\"><br><h4>$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-4\"><a class=\" btn btn-primary text-white show-more\" id ='getQuote" +i.toString()+j.toString()+"'>Get Quote</a></div></div>";
+
+              // CALCULATE COSTS AND DISPLAY IN JS
+              var total = d * allPlaces[i].places[j].price ;
+
+              document.getElementById('cost').innerHTML = "<p>The total cost for your stay is <b>$" + total + "</b> for " + d + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>"
+
+            }
+          } else {
+            // FAILED VALIDATION IN JQUERY
+            $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
           }
-        } else {
-          // FAILED VALIDATION
-          document.getElementById("searchResults").innerHTML + "<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>";
         }
-        // }
       }//loop j fin
     }//loop i
   }
-
-
 });
 
+function getQuote(t,d,c){
 
-// var accommThumbnails = document.getElementById('showMore');
-//   for (var i = 0; i < allPlaces[i].places.length; i++) {
-//     var id = parseInt( allPlaces[i].places.id);
-//   allPlaces[i].places.onclick = function(){
-//       var id= parseInt(this.dataset.id);
-// showMorePlaces(id);
-// }
-// };
+  var i, j;
+  for (i = 0 ; i < allPlaces.length ; i ++) {
+    for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
+      if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
+        if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
+          if ( c == allPlaces[i].places[j].location) {
 
-// POP UP PLACES INFO FUNCTION
+            var total = d * allPlaces[i].places[j].price ;
 
-function showMorePlaces(getPlaces){
-  var singlePlace;
-  for (var i = 0; i < allPlaces[i].places[j].length; i++) {
-    if(allPlaces[i].places[j].id === getPlaces){
-      singlePlace = allPlaces[i].places[j];
-      break;
+          }
+        }
+      }
+
     }
   }
-  document.getElementById("photo").src = "css/images/" + singlePlace.photo + "alt=\"accommodation room\">";
-  document.getElementById("name").innerText = singlePlace.name;
-  document.getElementById("stars").src = "css/images/" + singlePlace.stars + "alt=\"accommodation star rating\">";
-  document.getElementById("description").innerText = singlePlace.description;
-  document.getElementById("amenities").innerHTML = " ";
-  for (var i = 0; i < singlePlace.amenities.length; i++) {
-    document.getElementById("amenities").innerHTML += "<li class=\"list-inline-item\">" + singlePlace.amenities[i] + "</li>";
-  }
-  document.getElementById("location").innerText = singlePlace.location;
-  document.getElementById("address").innerText = singlePlace.address;
-  document.getElementById("nearby").innerHTML = " ";
-  for (var i = 0; i < singlePlace.nearby.length; i++) {
-    document.getElementById("nearby").innerHTML += "<li class=\"list-inline-item\">" + singlePlace.nearby[i] + "</li>";
-  }
-  document.getElementById("price").innerText = singlePlace.price;
 
-
-  // OVERLAY ENABLED
-
-  document.getElementById("accomPopUp").style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-
-// CLOSE WINDOW AND DISABLE SCROLL (OVERLAY DISABLED)
-
-document.getElementById("close").onclick = function(){
-  document.getElementById("accomPopUp").style.display = "none";
-  document.body.style.overflow = "scroll";
-  showMorePlaces();
 }
 
 
-// MEAL DATA/OBJECT
+// MEAL DATA/OBJECT IN JS
 
 var breakfast = [
   {
@@ -555,7 +531,7 @@ var breakfast = [
   }
 ]
 
-// SHOW MEAL OPTIONS
+// SHOW MEAL OPTIONS IN JQUERY/JS
 
 $(document).ready(function(){
 
@@ -570,49 +546,37 @@ $(document).ready(function(){
 });
 
 
-// DATE PICKER FUNCTION
+// DATE PICKER FUNCTION IN JQUERY WITH JQUERY UI
 
 
-$( function() {
-  $( "#datePicker1" ).datepicker({
-  });
+$("#datePicker1").datepicker({
+  dateFormat: "yy-mm-dd",
+  changeMonth: true,
+  minDate: new Date(),
+  maxDate: "+1Y",
+  onSelect: function(date){
 
-} );
+    var selectedDate = new Date(date);
+    var msecsInADay = 86400000;
+    var stDate = new Date(selectedDate.getTime() + msecsInADay);
+    console.log(stDate);
 
 
-$( function() {
-  $( "#datePicker2" ).datepicker({
-  });
-} );
+    $("#datePicker2").datepicker( "option", "minDate", stDate );
+    var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
 
-// $("#datePicker1").datepicker({
-//   dateFormat: "dd-mm-yy",
-//   changeMonth: true,
-//   minDate: new Date(),
-//   maxDate: "+1M",
-//   onSelect: function(date){
-//
-//     var selectedDate = new Date(date);
-//     var msecsInADay = 86400000;
-//     var stDate = new Date(selectedDate.getTime() + msecsInADay);
-//
-//
-//     $("#datePicker2").datepicker( "option", "minDate", stDate );
-//     var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
-//
-//     $("#datePicker2").datepicker( "option", "maxDate", enDate );
-//
-//   }
-// });
+    $("#datePicker2").datepicker( "option", "maxDate", enDate );
 
-// $("#datePicker2").datepicker({
-//   dateFormat: "dd-mm-yy",
-//   changeMonth: true,
-//   // minDate: 0
-// });
+  }
+});
 
-// CHECKOUT FORM VALIDATION
+$("#datePicker2").datepicker({
+  dateFormat: "yy-mm-dd",
+  changeMonth: true,
+  // minDate: 0
+});
 
+// CHECKOUT FORM VALIDATION IN JQUERY
 
 function emailCheck(){
   if($("#email").val()==""){
@@ -660,7 +624,7 @@ $(document).ready(function() {
 
 });
 
-// DISPLAY PAGES
+// DISPLAY PAGES IN JQUERY
 
 $(document).ready(function(){
 
@@ -674,7 +638,7 @@ $(document).ready(function(){
       $("#checkoutPage").hide();
       $("#confirmedPage").hide();
 
-      $(".showMore").click(function(){
+      $(".show-more").click(function(){
         $("#resultsPage").hide();
         $("#checkoutPage").show();
         $("#confirmedPage").hide();
@@ -698,16 +662,8 @@ $(document).ready(function(){
     });
   });
 });
-// checkoutPage
-// confirmedPage
-// resultsPage
-// search
-// home
-// confirm
-// open
-// searchBar
 
-// 3RD PLUGIN
+// 3RD PARTY PLUGIN IN JQUERY
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();

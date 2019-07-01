@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -21,12 +21,11 @@
     <div class="col">
       <div class="banner-search">
         <div class="banner-search-overlay">
-          <!-- <form action="index.html"> -->
           <div class="row">
             <div class="col col-8 mb-2 justify-content-center">
               <div class="form-group">
                 <label for="FormControlSelect1 text-dark bg-white border border-primary"></label>
-                <select class="form-control place">
+                <select class="form-control place" id="city">
                   <option>Destination</option>
                   <option class="auckland">Auckland</option>
                   <option class="wellington">Wellington</option>
@@ -37,12 +36,12 @@
             <div class="col col-8 mb-2 justify-content-center">
               <div class="form-group">
                 <label for="FormControlSelect2 text-dark bg-white border border-primary"></label>
-                <select class="form-control travellers">
-                  <option>No. of travellers</option>
-                  <option class="trv1">1</option>
-                  <option class="trv2">2</option>
-                  <option class="trv3">3</option>
-                  <option class="trv4">4</option>
+                <select class="form-control travellers" id="travellers">
+                  <option value="travellers">No. of travellers</option>
+                  <option value="1" class="trv1">1</option>
+                  <option value="2" class="trv2">2</option>
+                  <option value="3" class="trv3">3</option>
+                  <option value="4" class="trv4">4</option>
                 </select>
               </div>
             </div>
@@ -55,7 +54,7 @@
               <input type="text" placeholder=" Check out date"  id="datePicker2">
             </div>
             <div class="col-12 col-lg mb-2">
-              <input type="submit" name="submit" value="Search" id="search" class="btn btn-primary text-white"></div>
+              <input type="submit" name="submit" value="Search" id="search" class="btn btn-lg btn-primary text-white"></div>
             </div>
             <!-- </form> -->
           </div>
@@ -121,7 +120,7 @@
                   <input type="text" name="phone" id="phone" class="form-control col-6" placeholder="(000)-(0000000)">
                 </div>
                 <div class="form-group float-right">
-                  <input type="submit" name="submit" value="Confirm Booking" id="confirm" class="btn btn-primary text-white">
+                  <input type="submit" name="submit" value="Confirm Booking"  class="btn btn-primary text-white">
                 </div>
               </div>
             </form>
@@ -145,39 +144,6 @@
       </div>
     </div>
 
-
-    <!-- POP UP PAGE -->
-    <div id="accomPopUp" class="overlay">
-      <div class="overlayContent rounded pr-2">
-        <div class="row h-100">
-          <div class="col-10 h-100">
-            <div id="photo">
-
-            </div>
-          </div>
-          <div class="col-10 col-lg-5">
-            <h3 id="name" class="text-left mt-4"></h3>
-            <div id="stars">
-
-            </div>
-            <p id="description"></p>
-            <p id="amenities"></p>
-          </div>
-          <div class="col-10 col-lg-5">
-            <p id="location"></p>
-            <p id="address"></p>
-            <p id="nearby"></p>
-            <h3 id="price"></h3>
-          </div>
-          <div class="col-10 col-lg-10">
-            <button type="button" id="reserve" class="btn btn-primary text-white">Reserve</button>
-          </div>
-        </div>
-        <div id="close">
-          <i class="fas fa-times fa-2x"></i>
-        </div>
-      </div>
-    </div>
 
     <!-- SLIDESHOW -->
     <div id="slideshow">
