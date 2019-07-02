@@ -1227,7 +1227,7 @@ $(document).ready(function(){
   for (x = 0 ; x < breakfast.length ; x ++) {
 
 
-    breakfastCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-3 mb-3 mt-4\">" +
+    breakfastCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-6 col-lg-3 mb-3 mt-4\">" +
     "<div class=\"border-primary card h-100\">" + "<div class=\"h-100\"><img src=\"css/images/" + breakfast[x].image + "\"class=\"card-img-top mb-2\" \"alt=\"breakfast option\">" + "<div class=\"card-body px-4\"><h4>" + breakfast[x].name + "</h4><br><p>" + breakfast[x].description + "</p> <div class=\" pb-4 float-right form-check\"><input class=\"form-check-input breakfast bg-primary\" type=\"radio\" name=\"breakfast\" value=\"option\"><label class=\"form-check-label\" for=\"breakfast\"></label></div></div>";
   }
 });
