@@ -73,6 +73,38 @@ var allPlaces = [
         photo: "corpthorneRoom-Wellington.jpg"
       },
       {
+        id: 3,
+        name: "ibis Wellington",
+        stars: "3stars.png",
+        description: "This contemporary hotel is a 7-minute walk from the Wellington City Libraries, " + "8 minutes on foot from City Gallery Wellington and 1 km from the Museum of New Zealand Te Papa Tongarewa.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 5,
+          minPeople: 1,
+          maxPeople: 2
+        },
+        amenities: ["Air Conditioning", "24/7 Front Desk", "Restaurant", "Bar"],
+        location: "Wellington",
+        address: "153 Featherston Street, Wellington 6011",
+        nearby:[
+          {
+            place: "Lambton Quay",
+            walk: 2
+          },
+          {
+            place: "TSB Bank Arena",
+            walk: 5
+          },
+          {
+            place: "Wellington Cable Car",
+            walk: 7
+          }
+        ],
+        price: 157,
+        thumbnail: "ibisExterior-Wellington.jpg",
+        photo: "ibisRoom-Wellington.jpg"
+      },
+      {
         id: 4,
         name: "Copthorne Auckland",
         stars: "4stars.png",
@@ -138,6 +170,38 @@ var allPlaces = [
         photo: "rydgesRoom-Auckland.jpg"
       },
       {
+        id: 6,
+        name: "Skycity Hotel Auckland",
+        stars: "4stars.png",
+        description: "Along with 15 restaurants, this smoke-free hotel has a full-service spa and a casino." + " WiFi in public areas is free. Other amenities include 8 bars/lounges, a fitness center, and 2 coffee shops/cafés.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 5,
+          minPeople: 1,
+          maxPeople: 2
+        },
+        amenities: ["Air Conditioning", "Spa", "Restaurant", "Bar"],
+        location: "Auckland",
+        address: "Corner Victoria and Federal Streets, Auckland",
+        nearby:[
+          {
+            place: "Sky Tower",
+            walk: 1
+          },
+          {
+            place: "SkyCity Casino",
+            walk: 1
+          },
+          {
+            place: "Queen Street Shopping District",
+            walk: 4
+          }
+        ],
+        price: 157,
+        thumbnail: "SKYCITYHotelAucklandExterior.jpg",
+        photo: "SKYCITYHotelAucklandRoom.jpg"
+      },
+      {
         id: 7,
         name: "Heartland Hotel Queenstown",
         stars: "4stars.png",
@@ -201,6 +265,38 @@ var allPlaces = [
         thumbnail: "RydgesLakelandResortQueenstownExterior.jpg",
         photo: "RydgesLakelandResortQueenstownRoom.jpg"
       },
+      {
+        id: 9,
+        name: "Novotel Queenstown Lakeside",
+        stars: "4stars.png",
+        description: "A restaurant, a fitness center, and a bar/lounge are available at this hotel. " + "WiFi in public areas is free. Other amenities include a spa tub, valet parking, and 24-hour room service.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 5,
+          minPeople: 1,
+          maxPeople: 2
+        },
+        amenities: ["Air Conditioning", "Spa", "Restaurant", "Bar"],
+        location: "Queenstown",
+        address: "Corner of Earl and Marine Parade, Queenstown",
+        nearby:[
+          {
+            place: "Queenstown Mall",
+            walk: 3
+          },
+          {
+            place: "Skycity Queenstown Casino",
+            walk: 4
+          },
+          {
+            place: "Queenstown Beach",
+            walk: 4
+          }
+        ],
+        price: 157,
+        thumbnail: "",
+        photo: ""
+      }
     ]
   },
   {
@@ -266,6 +362,38 @@ var allPlaces = [
         thumbnail: "capitalViewMotorInnExterior-Wellington.jpg",
         photo: "capitalViewMotorInnRoom-Wellington.jpg"
       },
+      {
+        id: 12,
+        name: "Marksman Motor Inn",
+        stars: "4stars.png",
+        description: "Just 3 minutes’ walk from Government House Wellington, " + "Marksman Motor Inn offers accommodation with flat-screen satellite TV and a microwave." + " The property features Wi-Fi internet access and free parking.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Family rooms", "Non-smoking rooms"],
+        location: "Wellington",
+        address: "40-44 Sussex Street, 6021 Wellington",
+        nearby: [
+          {
+            place: "Government House Wellington",
+            walk: 3
+          },
+          {
+            place: "Courtenay Place",
+            walk: 10
+          },
+          {
+            place: "Cuba Street",
+            walk: 5
+          }
+        ],
+        price: 90,
+        thumbnail: "marksmenMotorInnExterior-Wellington.jpg",
+        photo: "marksmenMotorInnRoom-Wellington.jpg"
+      },
 
       {
         id: 13,
@@ -327,6 +455,38 @@ var allPlaces = [
         price: 90,
         thumbnail: "TudorCourtMotorLodgeExterior-Auckland.jpg",
         photo: "TudorCourtMotorLodgeRoom-Auckland.jpg"
+      },
+      {
+        id: 15,
+        name: "New Haven Motel",
+        stars: "4stars.png",
+        description: "This smoke-free motel features an outdoor pool, a fitness center, and a spa tub. " + "Free WiFi in public areas and free self parking are also provided.",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Airport shuttle", "Good for kids"],
+        location: "Wellington",
+        address: "3162 Great North Road, Kelston, New Lynn, Auckland",
+        nearby: [
+          {
+            place: "Auckland Zoo",
+            walk: 40
+          },
+          {
+            place: "Eden Park",
+            walk: 50
+          },
+          {
+            place: "Western Springs Stadium",
+            walk: 60
+          }
+        ],
+        price: 90,
+        thumbnail: "NewHavenMotelExterior-Auckland.jpg",
+        photo: "NewHavenMotelRoom-Auckland.jpg"
       },
       {
         id: 16,
@@ -391,7 +551,39 @@ var allPlaces = [
         price: 90,
         thumbnail: "",
         photo: ""
-      }
+      },
+      {
+        id: 18,
+        name: "Colonial Village Motel",
+        stars: "3stars.png",
+        description: "Along with laundry facilities, this motel has tour/ticket assistance and a garden. " + "Free WiFi in public areas and free self parking are also provided. ",
+        sleeps: {
+          minLength: 3,
+          maxLength: 10,
+          minPeople: 2,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-Fi", "Parking — Free", "Pet Friendly", "Housekeeping"],
+        location: "Queenstown",
+        address: "136 Frankton Road, Queenstown",
+        nearby: [
+          {
+            place: "Queenstown Beach",
+            walk: 14
+          },
+          {
+            place: "Queenstown Hill",
+            walk: 20
+          },
+          {
+            place: "Queenstown (ZQN-Queenstown Intl.)",
+            walk: 30
+          }
+        ],
+        price: 90,
+        thumbnail: "",
+        photo: ""
+      },
 
 
     ]
@@ -460,6 +652,30 @@ var allPlaces = [
         photo: "cityfringetownhouseRoom-Wellington.jpg"
       },
       {
+        id: 21,
+        name: "Architecturally Designed Studio Apartment",
+        stars: "4stars.png",
+        description: "This iconic Roger Walker apartment block," + " sometimes known as Noddy town, is an integral feature in Wellington's architecturally designed buildings. " + "It's quirky turrets and private passageways make it quite unique to visit.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-fi", "Children Welcome"],
+        location: "Wellington",
+        address: "Kilbirnie, Wellington",
+        nearby: [
+          {
+            place: "Kilbirnie township",
+            walk: 5
+          }
+        ],
+        price: 240,
+        thumbnail: "parkMewsExterior-Wellington.jpg",
+        photo: "parkMewsRoom-Wellington.jpg"
+      },
+      {
         id: 22,
         name: "Juan's Place",
         stars: "5stars.png",
@@ -505,6 +721,30 @@ var allPlaces = [
         amenities: ["Free-Wifi", "Gym", "Kitchen", "Lift"],
         location: "Auckland",
         address: "Auckland CBD",
+        nearby: [
+          {
+            place: "Downtown Auckland",
+            walk: 10
+          }
+        ],
+        price: 240,
+        thumbnail: "HostedbyEveliinaExterior-Auckland.jpg",
+        photo: "HostedbyEveliinaRoom-Auckland.jpg"
+      },
+      {
+        id: 24,
+        name: "Sunny Townhouse Near Trendy K Road",
+        stars: "5stars.png",
+        description: "Share this light-filled home with Frank the dachshund and Indi the cat." + " Contemporary decor is pleasingly neutral with pops of summery colour – sip a coffee on the plant-peppered patio before heading out to discover the hipstery neighbourhood haunts.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-fi", "Full Kitchen", "TV", "Washer & Dryer", "Coffee Maker"],
+        location: "Auckland",
+        address: "K Road, Auckland CBD, Auckland",
         nearby: [
           {
             place: "Downtown Auckland",
@@ -566,7 +806,39 @@ var allPlaces = [
         price: 240,
         thumbnail: "",
         photo: ""
-      }
+      },
+      {
+        id: 27,
+        name: "Spacious Bedroom/Ensuite",
+        stars: "5stars.png",
+        description: "Spacious, sunny and warm room with great views of the mountains and lake, a peaceful haven to relax.Has own private entrance. Private upstairs level with comfy super king bed, bathroom with shower and bath, walk-in wardrobe, private balcony.",
+        sleeps: {
+          minLength: 2,
+          maxLength: 15,
+          minPeople: 1,
+          maxPeople: 4
+        },
+        amenities: ["Free Wi-fi", "Breakfast", "Shampoo"],
+        location: "Queenstown",
+        address: "Fernhill, Queenstown 9300",
+        nearby: [
+          {
+            place: "Bus Stop",
+            walk: 1
+          },
+          {
+            place: "Skifield Bus",
+            walk: 5
+          },
+          {
+            place: "Fish & Chips Store",
+            walk: 3
+          }
+        ],
+        price: 240,
+        thumbnail: "",
+        photo: ""
+      },
     ]
   },
   {
@@ -632,6 +904,38 @@ var allPlaces = [
         price: 30,
         thumbnail: "HotelWaterlooBackpackersExterior-Wellington.jpg",
         photo: "HotelWaterlooBackpackersRoom-Wellington.jpg"
+      },
+      {
+        id: 30,
+        name: "Nomads Capital Backpackers",
+        stars: "5stars.png",
+        description: "Located in the heart of the city, " + "Nomads Capital Backpackers offers 5-star backpackers accommodation. " + " It is a 5-minute walk from Wellington's stunning waterfront.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Facilities for disabled guests", "Non-smoking", "Breakfast"],
+        location: "Wellington",
+        address: "118 Wakefield Street, 6011 Wellington",
+        nearby: [
+          {
+            place: "Te Papa Museum",
+            walk: 5
+          },
+          {
+            place: "Courtney Place",
+            walk: 7
+          },
+          {
+            place: "New World Metro",
+            walk: 4
+          }
+        ],
+        price: 30,
+        thumbnail: "nomadsCapitalBackpackersExterior-Wellington.jpg",
+        photo: "nomadsCapitalBackpackersRoom-Wellington.jpg"
       },
       {
         id: 31,
@@ -772,6 +1076,38 @@ var allPlaces = [
         price: 30,
         thumbnail: "",
         photo: ""
+      },
+      {
+        id: 36,
+        name: "Base Queenstown Hostel",
+        stars: "3stars.png",
+        description: "This smoke-free hostel features a nightclub," + " a bar/lounge, and coffee/tea in a common area." + " WiFi in public areas is free. Additionally, laundry facilities, a 24-hour front desk, and free newspapers are onsite.",
+        sleeps: {
+          minLength: 1,
+          maxLength: 10,
+          minPeople: 1,
+          maxPeople: 1
+        },
+        amenities: ["Free-Wifi", "Laundry service", "Bar", "Housekeeping"],
+        location: "Queenstown",
+        address: "47-49 Shotover Street, Queenstown",
+        nearby: [
+          {
+            place: "Fear Factory Queenstown",
+            walk: 1
+          },
+          {
+            place: "Skycity Queenstown Casino",
+            walk: 2
+          },
+          {
+            place: "TSS Earnslaw Steamship",
+            walk: 3
+          }
+        ],
+        price: 30,
+        thumbnail: "",
+        photo: ""
       }
     ]
   }
@@ -857,8 +1193,8 @@ $(document).ready(function(){
             }
           } else {
             // FAILED VALIDATION IN JQUERY
-            placesCards.innerHTML = "<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>"
-            // $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
+            // placesCards.innerHTML = "<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>"
+            $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
           }
         }
       }//loop j fin
