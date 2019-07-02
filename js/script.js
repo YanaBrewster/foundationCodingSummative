@@ -6,7 +6,7 @@ var totalCost = document.getElementById("cost") ;
 
 var allPlaces = [
   {
-    type: "hotel",
+    type: "Hotel",
     places: [
       {
         id: 1,
@@ -300,7 +300,7 @@ var allPlaces = [
     ]
   },
   {
-    type: "motel",
+    type: "Motel",
     places: [
       {
         id: 10,
@@ -589,7 +589,7 @@ var allPlaces = [
     ]
   },
   {
-    type:"house",
+    type:"House",
     places: [
       {
         id: 19,
@@ -842,7 +842,7 @@ var allPlaces = [
     ]
   },
   {
-    type:"hostel",
+    type:"Hostel",
     places: [
       {
         id: 28,
@@ -1185,9 +1185,12 @@ $(document).ready(function(){
               var total = d * allPlaces[i].places[j].price ;
 
               placesCards.innerHTML += "<div class=\"col-12 col-lg-6 col-sm-12 col-md-6 mb-2 mt-4\">" +
-              "<div class=\"border-primary card h-100\">" +
+              "<div class=\"border-primary card h-100 mr-4 ml-4\">" +
               "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
-              "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
+              "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body px-5\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Type</h4> "+  allPlaces[i].type + "<br><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn-lg btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
+              // for (var i = 0; i < allPlaces[i].places[j].nearby.length; i++) {
+              // + '<li class="list-inline-item">' + allPlaces[i].places[j].nearby + '</li>';
+              // }
               // "<br><h4>Nearby</h4><ul><li class=\"list-inline-item\">" +  allPlaces[i].places[j].nearby + "</li><ul></div><div class=\"pt-2 d-block\"><div class=\"text-secondary mt-2 mb-2 text-center\">
               console.log("passed validation");
             }
@@ -1240,7 +1243,7 @@ var breakfast = [
     image: "continentialbreakfast.jpg"
   },
   {
-    name: "Full Breakfast",
+    name: "Full Cooked Breakfast",
     description: "Eggs with tomato, bacon, sausage, and toast",
     image: "bigbreakfast.jpg"
   }
@@ -1256,7 +1259,7 @@ $(document).ready(function(){
 
 
     breakfastCards.innerHTML += "<div class=\"col-12 col-sm-6 col-md-3 mb-3 mt-4\">" +
-    "<div class=\"border-primary card h-100\">" + "<div class=\"h-100\"><img src=\"css/images/" + breakfast[x].image + "\"class=\"card-img-top mb-2\" \"alt=\"breakfast option\">" + "<div class=\"card-body px-2\"><h4>" + breakfast[x].name + "</h4><br><p>" + breakfast[x].description + "</p> <div class=\" float-right form-check\"><input class=\"form-check-input breakfast\" type=\"radio\" name=\"breakfast\" value=\"option\"><label class=\"form-check-label\" for=\"breakfast\"></label></div></div>";
+    "<div class=\"border-primary card h-100\">" + "<div class=\"h-100\"><img src=\"css/images/" + breakfast[x].image + "\"class=\"card-img-top mb-2\" \"alt=\"breakfast option\">" + "<div class=\"card-body px-4\"><h4>" + breakfast[x].name + "</h4><br><p>" + breakfast[x].description + "</p> <div class=\" pb-4 float-right form-check\"><input class=\"form-check-input breakfast bg-primary\" type=\"radio\" name=\"breakfast\" value=\"option\"><label class=\"form-check-label\" for=\"breakfast\"></label></div></div>";
   }
 });
 
