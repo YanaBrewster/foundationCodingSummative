@@ -19,7 +19,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Pool", "Free Wifi", "Air Conditioning", "Spa", "Restaurant", "Gym"],
+        amenities: ["Pool", " Free Wifi", " Air Conditioning", " Spa", " Restaurant", " Gym"],
         location: "Wellington",
         address: "90 Cable Street, Te Aro, Wellington, 6011",
         nearby:[
@@ -51,7 +51,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Soundproof Rooms", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+        amenities: ["Soundproof Rooms", " Free Wifi", " Restaurant", " Breakfast Available", " Business Services", " Parking Available"],
         location: "Wellington",
         address: "100 Oriental Parade, Oriental Bay, Wellington 6011",
         nearby:[
@@ -83,7 +83,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Air Conditioning", "24/7 Front Desk", "Restaurant", "Bar"],
+        amenities: ["Air Conditioning", " 24/7 Front Desk", " Restaurant", " Bar"],
         location: "Wellington",
         address: "153 Featherston Street, Wellington 6011",
         nearby:[
@@ -115,7 +115,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Soundproof Rooms", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+        amenities: ["Soundproof Rooms", " Free Wifi", " Restaurant", " Breakfast Available", " Business Services", " Parking Available"],
         location: "Auckland",
         address: "150 Anzac Avenue, Auckland",
         nearby:[
@@ -148,7 +148,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Air Conditioning", "Free Wifi", "Restaurant", "Breakfast Available", "Business Services", "Parking Available"],
+        amenities: ["Air Conditioning", " Free Wifi", " Restaurant", " Breakfast Available", " Business Services", " Parking Available"],
         location: "Auckland",
         address: "59 Federal St, Auckland, 1010",
         nearby:[
@@ -180,7 +180,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Air Conditioning", "Spa", "Restaurant", "Bar"],
+        amenities: ["Air Conditioning", " Spa", " Restaurant", " Bar"],
         location: "Auckland",
         address: "Corner Victoria and Federal Streets, Auckland",
         nearby:[
@@ -212,7 +212,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Free Parking", "Free Wifi", "Restaurant", "Breakfast Available", "Bar", "Room Service"],
+        amenities: ["Free Parking", " Free Wifi", " Restaurant", " Breakfast Available", " Bar", " Room Service"],
         location: "Queenstown",
         address: "27 Stanley Street, Queenstown",
         nearby:[
@@ -244,7 +244,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Pool", "Free Wifi", "Restaurant", "Breakfast Available", "Bar", "Spa"],
+        amenities: ["Pool", " Free Wifi", " Restaurant", " Breakfast Available", " Bar", " Spa"],
         location: "Queenstown",
         address: "38-54 Lake Esplanade, Queenstown",
         nearby:[
@@ -276,7 +276,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 2
         },
-        amenities: ["Air Conditioning", "Spa", "Restaurant", "Bar"],
+        amenities: ["Air Conditioning", " Spa", " Restaurant", " Bar"],
         location: "Queenstown",
         address: "Corner of Earl and Marine Parade, Queenstown",
         nearby:[
@@ -313,7 +313,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Airport shuttle", "Good for kids"],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Airport shuttle", " Good for kids"],
         location: "Wellington",
         address: "49 Majoribanks St, Mount Victoria, Wellington 6011",
         nearby: [
@@ -345,7 +345,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Airport shuttle", "Good for kids", "Non-smoking rooms" ],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Airport shuttle", " Good for kids", " Non-smoking rooms" ],
         location: "Wellington",
         address: "12 Thompson Street, 6011 Wellington",
         nearby: [
@@ -373,7 +373,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Family rooms", "Non-smoking rooms"],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Family rooms", " Non-smoking rooms"],
         location: "Wellington",
         address: "40-44 Sussex Street, 6021 Wellington",
         nearby: [
@@ -406,7 +406,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Free Breakfast", "Laundry", "Housekeeping" ],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Free Breakfast", " Laundry", " Housekeeping" ],
         location: "Auckland",
         address: "453 Great South Road Penrose, Auckland",
         nearby: [
@@ -435,7 +435,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Free Breakfast", "Laundry", "Housekeeping" ],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Free Breakfast", " Laundry", " Housekeeping" ],
         location: "Auckland",
         address: "108 Great South Road, Epsom, Auckland",
         nearby: [
@@ -467,7 +467,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Airport shuttle", "Good for kids"],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Airport shuttle", " Good for kids"],
         location: "Wellington",
         address: "3162 Great North Road, Kelston, New Lynn, Auckland",
         nearby: [
@@ -499,7 +499,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Air Conditioning", "Laundry", "Housekeeping" ],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Air Conditioning", " Laundry", " Housekeeping" ],
         location: "Queenstown",
         address: "2-4 Dublin Street, Queenstown",
         nearby: [
@@ -531,7 +531,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Laundry", "Housekeeping" ],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Laundry", " Housekeeping" ],
         location: "Queenstown",
         address: "1 Gorge Road, Queenstown",
         nearby: [
@@ -563,7 +563,7 @@ var allPlaces = [
           minPeople: 2,
           maxPeople: 4
         },
-        amenities: ["Free Wi-Fi", "Parking — Free", "Pet Friendly", "Housekeeping"],
+        amenities: ["Free Wi-Fi", " Parking — Free", " Pet Friendly", " Housekeeping"],
         location: "Queenstown",
         address: "136 Frankton Road, Queenstown",
         nearby: [
@@ -602,7 +602,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free Wi-fi", "Air Conditioning", "TV", "Washer & Dryer", "Children Welcome"],
+        amenities: ["Free Wi-fi", " Air Conditioning", " TV", " Washer & Dryer", " Children Welcome"],
         location: "Wellington",
         address: "Thorndon, Wellington City, Wellington, New Zealand",
         nearby: [
@@ -634,7 +634,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free-Wifi", "Air Conditioning", "No Smoking", "Children Welcome"],
+        amenities: ["Free-Wifi", " Air Conditioning", " No Smoking", " Children Welcome"],
         location: "Wellington",
         address: "Northland, Wellington City, Wellington, New Zealand",
         nearby: [
@@ -662,7 +662,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free Wi-fi", "Children Welcome"],
+        amenities: ["Free Wi-fi", " Children Welcome"],
         location: "Wellington",
         address: "Kilbirnie, Wellington",
         nearby: [
@@ -686,7 +686,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free-Wifi", "Kitchen", "Lift", "Cable TV"],
+        amenities: ["Free-Wifi", " Kitchen", " Lift", " Cable TV"],
         location: "Auckland",
         address: "Queen St, Auckland",
         nearby: [
@@ -718,7 +718,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free-Wifi", "Gym", "Kitchen", "Lift"],
+        amenities: ["Free-Wifi", " Gym", " Kitchen", " Lift"],
         location: "Auckland",
         address: "Auckland CBD",
         nearby: [
@@ -742,7 +742,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free Wi-fi", "Full Kitchen", "TV", "Washer & Dryer", "Coffee Maker"],
+        amenities: ["Free Wi-fi", " Full Kitchen", " TV", " Washer & Dryer", " Coffee Maker"],
         location: "Auckland",
         address: "K Road, Auckland CBD, Auckland",
         nearby: [
@@ -752,8 +752,8 @@ var allPlaces = [
           }
         ],
         price: 240,
-        thumbnail: "HostedbyEveliinaExterior-Auckland.jpg",
-        photo: "HostedbyEveliinaRoom-Auckland.jpg"
+        thumbnail: "nadiaExterior-Auckland.jpg",
+        photo: "nadiaRoom-Auckland.jpg"
       },
       {
         id: 25,
@@ -766,7 +766,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free-Wifi", "Air Conditioning", "Free Parking", "Iron"],
+        amenities: ["Free-Wifi", " Air Conditioning", " Free Parking", " Iron"],
         location: "Queenstown",
         address: "Queenstown, Otago, New Zealand",
         nearby: [
@@ -794,7 +794,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free-Wifi", "Kitchen", "Iron", "Shampoo"],
+        amenities: ["Free-Wifi", " Kitchen", " Iron", " Shampoo"],
         location: "Queenstown",
         address: "Queenstown, Otago, New Zealand",
         nearby: [
@@ -818,7 +818,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 4
         },
-        amenities: ["Free Wi-fi", "Breakfast", "Shampoo"],
+        amenities: ["Free Wi-fi", " Breakfast", " Shampoo"],
         location: "Queenstown",
         address: "Fernhill, Queenstown 9300",
         nearby: [
@@ -855,7 +855,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Wifi", "Laundry service", "Smoke-free property", "Child care"],
+        amenities: ["Wifi", " Laundry service", " Smoke-free property", " Child care"],
         location: "Wellington",
         address: "292 Wakefield St, Te Aro, Wellington 6011",
         nearby: [
@@ -888,7 +888,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Family Rooms", "24-hour front desk", "Restaurant"],
+        amenities: ["Free-Wifi", " Family Rooms", " 24-hour front desk", " Restaurant"],
         location: "Wellington",
         address: "1 Bunny Street, 6011 Wellington",
         nearby: [
@@ -916,7 +916,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Facilities for disabled guests", "Non-smoking", "Breakfast"],
+        amenities: ["Free-Wifi", " Facilities for disabled guests", " Non-smoking", " Breakfast"],
         location: "Wellington",
         address: "118 Wakefield Street, 6011 Wellington",
         nearby: [
@@ -948,7 +948,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Kitchen", "Laundry"],
+        amenities: ["Free-Wifi", " Kitchen", " Laundry"],
         location: "Auckland",
         address: "373 Karangahape Rd, Auckland",
         nearby: [
@@ -976,7 +976,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Kitchen", "Gym", "Free Parking", "Breakfast Available"],
+        amenities: ["Kitchen", " Gym", " Free Parking", " Breakfast Available"],
         location: "Auckland",
         address: "20 Pitt Street, Auckland",
         nearby: [
@@ -1004,7 +1004,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Kitchen", "Bar", "Free Breakfast"],
+        amenities: ["Free-Wifi", " Kitchen", " Bar", " Free Breakfast"],
         location: "Auckland",
         address: "4 Fort Street, Auckland",
         nearby: [
@@ -1032,7 +1032,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Air Conditioning", "Spa", "24-hour front desk", "Laundry"],
+        amenities: ["Air Conditioning", " Spa", " 24-hour front desk", " Laundry"],
         location: "Queenstown",
         address: "5-11 Church Street, Queenstown",
         nearby: [
@@ -1060,7 +1060,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Laundry", "Housekeeping"],
+        amenities: [" Free-Wifi", " Laundry", " Housekeeping"],
         location: "Queenstown",
         address: "48 Shotover Street, Queenstown",
         nearby: [
@@ -1088,7 +1088,7 @@ var allPlaces = [
           minPeople: 1,
           maxPeople: 1
         },
-        amenities: ["Free-Wifi", "Laundry service", "Bar", "Housekeeping"],
+        amenities: ["Free-Wifi", " Laundry service", " Bar", " Housekeeping"],
         location: "Queenstown",
         address: "47-49 Shotover Street, Queenstown",
         nearby: [
@@ -1172,7 +1172,7 @@ $(document).ready(function(){
   // FILTER/VALIDATION FUNCTION IN JS
 
   function getPlaces(t, d, c){
-
+    var checker = false;
     placesCards.innerHTML =" ";
     for (var i = 0 ; i < allPlaces.length ; i ++) {
       for (var j = 0 ; j < allPlaces[i].places.length ; j ++) {
@@ -1180,8 +1180,7 @@ $(document).ready(function(){
         if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
           if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
             if ( c == allPlaces[i].places[j].location) {
-
-
+              checker = true;
               // SUCCESSFUL VALIDATION
               var total = d * allPlaces[i].places[j].price ;
 
@@ -1190,22 +1189,25 @@ $(document).ready(function(){
               "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
               "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
               // "<br><h4>Nearby</h4><ul><li class=\"list-inline-item\">" +  allPlaces[i].places[j].nearby + "</li><ul></div><div class=\"pt-2 d-block\"><div class=\"text-secondary mt-2 mb-2 text-center\">
+              console.log("passed validation");
             }
-          } else {
-            // FAILED VALIDATION IN JQUERY
-            // placesCards.innerHTML = "<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>"
-            $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
           }
         }
       }//loop j fin
-    }//loop i
+    }//loop i fin
+
+    // UNSUCCESSFUL VALIDATION
+    if (checker == false){
+      $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
+      console.log("failed validation");
+    }
   }
 });
 
 // CALCULATE COSTS AND DISPLAY IN JS
 
 function calcCost (totalCost, days) {
-    document.getElementById('cost').innerHTML = "<p>The total cost for your stay is <b>$" + totalCost + "</b> for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
+    document.getElementById('cost').innerHTML = "<p>The total cost for your stay is $" + totalCost + " for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
 }
 
 // function getQuote(t,d,c){
@@ -1286,7 +1288,6 @@ $("#datePicker1").datepicker({
 $("#datePicker2").datepicker({
   dateFormat: "yy-mm-dd",
   changeMonth: true,
-  // minDate: 0
 });
 
 // CHECKOUT FORM VALIDATION IN JQUERY
@@ -1357,6 +1358,8 @@ $(document).ready(function(){
         $("#confirmedPage").hide();
         $("#searchBar").hide();
         $("#slideshow").hide();
+        $("#slideshow").hide();
+        $(".googleMap").hide();
       });
       $("#confirm").click(function(){
         $("#resultsPage").hide();
@@ -1364,6 +1367,7 @@ $(document).ready(function(){
         $("#confirmedPage").show();
         $("#searchBar").hide();
         $("#slideshow").hide();
+        $(".googleMap").hide();
       });
       $("#home").click(function(){
         $("#searchBar").show();
