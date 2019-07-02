@@ -141,7 +141,6 @@ var allPlaces = [
         name: "Rydges Auckland",
         stars: "4stars.png",
         description: "A restaurant, a 24-hour fitness center," + " and a bar/lounge are available at this smoke-free hotel." + " WiFi in public areas is free. Additionally, a coffee shop/café,",
-        sleeps: "1-2 people <br> min stay 1 night, max stay 5 nights",
         sleeps: {
           minLength: 1,
           maxLength: 5,
@@ -583,9 +582,7 @@ var allPlaces = [
         price: 90,
         thumbnail: "",
         photo: "ColonialVillageMotelQueenstownRoom.jpg"
-      },
-
-
+      }
     ]
   },
   {
@@ -1203,7 +1200,7 @@ $(document).ready(function(){
 // CALCULATE COSTS AND DISPLAY IN JS
 
 function calcCost (totalCost, days) {
-  document.getElementById('cost').innerHTML = "<p>The total cost for your stay is $" + totalCost + " for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
+  document.getElementById("cost").innerHTML = "<p>The total cost for your stay is $" + totalCost + " for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
 }
 
 // MEAL DATA/OBJECT IN JS
