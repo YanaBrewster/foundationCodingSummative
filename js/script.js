@@ -295,7 +295,7 @@ var allPlaces = [
         ],
         price: 157,
         thumbnail: "",
-        photo: ""
+        photo: "NovotelQueenstownLakesideroom.jpg"
       }
     ]
   },
@@ -518,7 +518,7 @@ var allPlaces = [
         ],
         price: 90,
         thumbnail: "",
-        photo: ""
+        photo: "AutolineMotelRoom.jpg"
       },
       {
         id: 17,
@@ -550,7 +550,7 @@ var allPlaces = [
         ],
         price: 90,
         thumbnail: "",
-        photo: ""
+        photo: "AmberLodgeMotelRoom.jpg"
       },
       {
         id: 18,
@@ -582,7 +582,7 @@ var allPlaces = [
         ],
         price: 90,
         thumbnail: "",
-        photo: ""
+        photo: "ColonialVillageMotelQueenstownRoom.jpg"
       },
 
 
@@ -781,7 +781,7 @@ var allPlaces = [
         ],
         price: 240,
         thumbnail: "",
-        photo: ""
+        photo: "Shannon&MiaRoom.JPG"
       },
       {
         id: 26,
@@ -805,7 +805,7 @@ var allPlaces = [
         ],
         price: 240,
         thumbnail: "",
-        photo: ""
+        photo: "SantoshRoom.jpg"
       },
       {
         id: 27,
@@ -837,7 +837,7 @@ var allPlaces = [
         ],
         price: 240,
         thumbnail: "",
-        photo: ""
+        photo: "KatRoom.JPG"
       },
     ]
   },
@@ -1047,7 +1047,7 @@ var allPlaces = [
         ],
         price: 30,
         thumbnail: "",
-        photo: ""
+        photo: "NomadsQueenstownBackpackersRoom.jpg"
       },
       {
         id: 35,
@@ -1075,7 +1075,7 @@ var allPlaces = [
         ],
         price: 30,
         thumbnail: "",
-        photo: ""
+        photo: "YHAQueenstownCentralRoom.jpg"
       },
       {
         id: 36,
@@ -1107,7 +1107,7 @@ var allPlaces = [
         ],
         price: 30,
         thumbnail: "",
-        photo: ""
+        photo: "BaseQueenstownRoom.jpg"
       }
     ]
   }
@@ -1155,7 +1155,6 @@ $(document).ready(function(){
     var start = $("#datePicker1").datepicker("getDate");
     var end = $("#datePicker2").datepicker("getDate");
     days  = (end - start)/1000/60/60/24;
-    console.log(days);
     return days;
   }
 
@@ -1187,12 +1186,7 @@ $(document).ready(function(){
               placesCards.innerHTML += "<div class=\"col-12 col-lg-6 col-sm-12 col-md-6 mb-2 mt-4\">" +
               "<div class=\"border-primary card h-100 mr-4 ml-4\">" +
               "<div class=\"accomm-thumb h-100\" data-id=\"" + allPlaces[i].places[j].id +"\">" +
-              "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body px-5\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Type</h4> "+  allPlaces[i].type + "<br><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn-lg btn btn-primary text-white show-more mb-4\" id ='getQuote" +i.toString()+j.toString()+"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
-              // for (var i = 0; i < allPlaces[i].places[j].nearby.length; i++) {
-              // + '<li class="list-inline-item">' + allPlaces[i].places[j].nearby + '</li>';
-              // }
-              // "<br><h4>Nearby</h4><ul><li class=\"list-inline-item\">" +  allPlaces[i].places[j].nearby + "</li><ul></div><div class=\"pt-2 d-block\"><div class=\"text-secondary mt-2 mb-2 text-center\">
-              console.log("passed validation");
+              "<img src=\"css/images/" + allPlaces[i].places[j].photo + "\"class=\"card-img-top\" alt=\"accommodation exterior\">" + "<div class=\"card-body px-5 mt-4\"><h4>" + allPlaces[i].places[j].name + "</h4><img src=\"css/images/" + allPlaces[i].places[j].stars + "\"><div class=\"pt-4 d-block\">" +  allPlaces[i].places[j].description + "</div><div class=\"pt-2 d-block\"><br><h4>Type</h4> "+  allPlaces[i].type + "<br><br><h4>Amenities</h4>" +  allPlaces[i].places[j].amenities + "</div><br><h4>Address</h4>" +  allPlaces[i].places[j].address + "<h4 class=\"text-center mt-4\">$" + allPlaces[i].places[j].price + " per night </h4></div><div class=\"text-center mt-2\"><a class=\" btn-lg btn btn-primary text-white show-more mb-4\"' onclick='calcCost(" + total + ", " + d +")'>Reserve</a></div></div>";
             }
           }
         }
@@ -1202,7 +1196,6 @@ $(document).ready(function(){
     // UNSUCCESSFUL VALIDATION
     if (checker == false){
       $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
-      console.log("failed validation");
     }
   }
 });
@@ -1210,29 +1203,8 @@ $(document).ready(function(){
 // CALCULATE COSTS AND DISPLAY IN JS
 
 function calcCost (totalCost, days) {
-    document.getElementById('cost').innerHTML = "<p>The total cost for your stay is $" + totalCost + " for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
+  document.getElementById('cost').innerHTML = "<p>The total cost for your stay is $" + totalCost + " for " + days + " day/s. <br><br> <h4> Special Offer </h4> Choose one free breakfast option for your stay</p>";
 }
-
-// function getQuote(t,d,c){
-//
-//   var i, j;
-//   for (i = 0 ; i < allPlaces.length ; i ++) {
-//     for (j = 0 ; j < allPlaces[i].places.length ; j ++) {
-//       if (( t >= allPlaces[i].places[j].sleeps.minPeople) && ( t <= allPlaces[i].places[j].sleeps.maxPeople)) {
-//         if (( d >= allPlaces[i].places[j].sleeps.minLength) && ( d <= allPlaces[i].places[j].sleeps.maxLength)) {
-//           if ( c == allPlaces[i].places[j].location) {
-//
-//             var total = d * allPlaces[i].places[j].price ;
-//
-//           }
-//         }
-//       }
-//
-//     }
-//   }
-//
-// }
-
 
 // MEAL DATA/OBJECT IN JS
 
@@ -1265,7 +1237,6 @@ $(document).ready(function(){
 
 
 // DATE PICKER FUNCTION IN JQUERY WITH JQUERY UI
-
 
 $("#datePicker1").datepicker({
   dateFormat: "yy-mm-dd",
