@@ -1169,6 +1169,7 @@ $(document).ready(function(){
 
   function getPlaces(t, d, c){
     var checker = false;
+        $("#searchResults").empty();
     placesCards.innerHTML =" ";
     for (var i = 0 ; i < allPlaces.length ; i ++) {
       for (var j = 0 ; j < allPlaces[i].places.length ; j ++) {
@@ -1192,7 +1193,8 @@ $(document).ready(function(){
 
     // UNSUCCESSFUL VALIDATION
     if (checker == false){
-      $("#searchResults").html("<div class=\"col-12 text-center mt-4\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
+
+      $("#searchResults").html("<div class=\"col-12 text-center py-5\"><h4>Search was unsuccessful, we could not find accommodation that matches your search requirements.</h4></div>");
     }
   }
 });
